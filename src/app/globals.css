@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f3f5f8;
+  --surface: #ffffff;
+  --ink: #1b2330;
+  --ink-2: #455064;
+  --muted: #687285;
+  --rule: #d9dee6;
+  --rule-strong: #b9c1cd;
+  /* Marker hues validated with the dataviz palette checker against --paper. */
+  --crowd: #b26b00;
+  --sharp: #2f5bea;
+  --kalshi: #c0398c;
+  --sharp-wash: rgb(47 91 234 / 0.12);
+  --won: #1d7a46;
+  --lost: #b3261e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0f141c;
+    --surface: #141a24;
+    --ink: #e6eaf0;
+    --ink-2: #b6bfcc;
+    --muted: #8a94a6;
+    --rule: #263041;
+    --rule-strong: #3a4659;
+    --crowd: #b87a22;
+    --sharp: #6f8cf5;
+    --kalshi: #db5fa8;
+    --sharp-wash: rgb(111 140 245 / 0.16);
+    --won: #4cc285;
+    --lost: #f2776d;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+  --color-crowd: var(--crowd);
+  --color-sharp: var(--sharp);
+  --color-kalshi: var(--kalshi);
+  --color-sharp-wash: var(--sharp-wash);
+  --color-won: var(--won);
+  --color-lost: var(--lost);
+  --font-sans: var(--font-grotesk);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-grotesk), system-ui, sans-serif;
+  font-feature-settings: "tnum" 1, "ss01" 1;
+}
+
+:focus-visible {
+  outline: 2px solid var(--sharp);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

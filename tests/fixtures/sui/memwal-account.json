@@ -1,0 +1,29 @@
+{
+  "objectId": "0xd1765ff24e90ae51d8155e6864bff1b722f8148a249d95795f9241f2aeeec210",
+  "version": "1062994363",
+  "digest": "2TcoPKerUBVTYTY6oJ1t7P8d9XrQncZqZpBAgXYm4sgN",
+  "owner": {
+    "$kind": "Shared",
+    "Shared": {
+      "initialSharedVersion": "1062994362"
+    }
+  },
+  "type": "0xe7c16fbea0560e7057e2bf7422feaa4fb313749fc69c9e9092fac7a33b81d7f5::account::MemWalAccount",
+  "json": {
+    "id": "0xd1765ff24e90ae51d8155e6864bff1b722f8148a249d95795f9241f2aeeec210",
+    "owner": "0xa737f0dbf3659f557cfdd58c66fded728677ee42ee36fdca7abf57220be1ab60",
+    "delegate_keys": [
+      {
+        "public_key": "K1ZvnBHkr21Y7gv+PxWwTX8wfPE0x9VU+hGnvYnrB0M=",
+        "sui_address": "0x1fdd567c3ec3e05dcd13634831469264f31020939af9e5da4d99deca50f27af5",
+        "label": "Web App",
+        "created_at": "1793787276565"
+      }
+    ],
+    "created_at": "1793787271273",
+    "active": true,
+    "admin_quarantined": false,
+    "legacy_account_id": null,
+    "access_counter_version": "0"
+  }
+}

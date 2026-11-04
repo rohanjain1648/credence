@@ -1,0 +1,34 @@
+{
+  "id": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917",
+  "platform": "polymarket",
+  "eventId": "12345",
+  "question": "Will Elon Musk land humans on Mars by 2030?",
+  "description": "Resolves YES if SpaceX confirms a successful crewed Mars landing by 2030-12-31.",
+  "category": "Science",
+  "tags": ["space", "spacex"],
+  "imageUrl": "https://polymarket.com/images/elon-mars.png",
+  "status": "active",
+  "openTime": "2024-01-01T00:00:00Z",
+  "closeTime": "2030-12-31T23:59:59Z",
+  "settleTime": "2031-01-15T00:00:00Z",
+  "outcomes": [
+    { "name": "YES", "price": 0.42, "tokenId": "71321045679252212594626385532706912750332728571942612009397583165281712267356" },
+    { "name": "NO", "price": 0.58, "tokenId": "5239841276582930182" }
+  ],
+  "volume": 1542300.12,
+  "volumeUnit": "usd",
+  "liquidity": 89400.5,
+  "resolution": null,
+  "createdAt": "2023-11-21T10:42:00Z",
+  "source": {
+    "platform": "polymarket",
+    "platformId": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917",
+    "url": "https://polymarket.com/event/elon-mars"
+  },
+  "chain": {
+    "chainId": 137,
+    "conditionId": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917",
+    "tokenIds": { "yes": "7132104567925221259", "no": "5239841276582930182" },
+    "resolutionSource": "https://uma.app/"
+  }
+}

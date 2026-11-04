@@ -1,0 +1,1156 @@
+{
+  "data": [
+    {
+      "id": "0xd5d9fc47718bd553592d126b1fa5e87183d27f3936975b0c04cc0f2dec1f1bb4",
+      "platform": "polymarket",
+      "eventId": "32225",
+      "question": "Will the Democratic Party control the House after the 2026 Midterm elections?",
+      "description": "This market will resolve according to the party that wins control of the United States House of Representatives in the 2026 United States midterm election.\n\nA party wins control of the United States House of Representatives if it wins a majority of the chamber’s voting seats. If no party wins a majority of voting seats, the chamber will be deemed controlled by the party with which the first elected Speaker of the House of the Congress that convenes after the 2026 midterm election is affiliated.\n\nThe following rules govern the counting of seats for determining which party wins control of the chamber.\n\nAll House elections in the 2026 United States midterm election that elect voting members and determine representation in the upcoming 120th Congress are included. Where a seat is decided by a runoff, the runoff result will determine attribution of that seat.\n\nSeats are attributed to the party under which the member was elected. If a member-elect changes party affiliation, or vacates their seat, between election day and the formal organization of Congress, the seat is attributed to the party under which the member was elected.\n\nHouse members elected as independents who formally caucus with, or, for newly elected members, who announce their intent to caucus with, a party are included in that party’s count. If the caucus decisions of members of the House elected as independents cannot be determined on the date of the election, this market may remain open until the earlier of (i) an announcement from the relevant members of their intents to caucus, or (ii) January 4th, 11:59 PM ET of the following calendar year. If no such announcement is made by January 4th, 11:59 PM ET of the following calendar year, the member will not count towards the seat count of any party.\n\nThe resolution sources for this market will be official information from relevant state electoral authorities, the United States Congress, and a consensus of credible reporting.",
+      "category": "Control & Seats",
+      "tags": [
+        "midterms-control",
+        "parent-for-derivative",
+        "united-states",
+        "politics",
+        "us-presidential-election",
+        "midterms",
+        "world-elections",
+        "elections",
+        "global-elections",
+        "earn-4",
+        "main-election"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-the-democratic-party-control-the-senate-after-the-2026-midterm-elections-JJ9h02JGR09z.png",
+      "status": "active",
+      "openTime": "2025-07-11T00:00:00.000Z",
+      "closeTime": "2026-11-04T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.9995,
+          "tokenId": "83247781037352156539108067944461291821683755894607244160607042790356561625563"
+        },
+        {
+          "name": "NO",
+          "price": 0.0005,
+          "tokenId": "33156410999665902694791064431724433042010245771106314074312009703157423879038"
+        }
+      ],
+      "volume": 37282147.826353,
+      "volumeUnit": "usd",
+      "liquidity": 1587764.87623,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0xd5d9fc47718bd553592d126b1fa5e87183d27f3936975b0c04cc0f2dec1f1bb4",
+        "tokenIds": {
+          "yes": "83247781037352156539108067944461291821683755894607244160607042790356561625563",
+          "no": "33156410999665902694791064431724433042010245771106314074312009703157423879038"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2025-07-11T19:29:37.755Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0xd5d9fc47718bd553592d126b1fa5e87183d27f3936975b0c04cc0f2dec1f1bb4",
+        "url": "https://polymarket.com/event/which-party-will-win-the-house-in-2026"
+      }
+    },
+    {
+      "id": "0x7586a96520578acaaaa4ea84a2582f197f84255da1f3392a7aa300386c187b37",
+      "platform": "polymarket",
+      "eventId": "81557",
+      "question": "Will Benjamin Netanyahu be the next Prime Minister of Israel?",
+      "description": "Legislative elections are schedule to be held in Israel on October 27, 2026. \n\nThis market will resolve to the next individual who is officially appointed and sworn in as Prime Minister of Israel following the 2026 parliamentary election. If an election is called early, this market will immediately resolve to the individual who is officially appointed and sworn in after that election.\n\nTo count for resolution, the individual must be formally sworn in. Any interim or caretaker Prime Minister will not count toward the resolution of this market.\n\nIf no such Prime Minister is sworn in by December 31, 2027, 11:59 PM ET, this market will resolve to “Other”.\n\nThe primary resolution source for this market will be official information from the Government of Israel; however, a consensus of credible reporting may also be used.",
+      "category": "Israel Election",
+      "tags": [
+        "israel-election",
+        "politics",
+        "elections",
+        "middle-east",
+        "israel",
+        "global-elections",
+        "geopolitics",
+        "world",
+        "trump-netanyahu",
+        "world-elections",
+        "main-election"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/israel-benjamin-netanyahu-9221e795d7.jpg",
+      "status": "active",
+      "openTime": "2025-11-15T00:00:00.000Z",
+      "closeTime": "2026-10-28T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.2715,
+          "tokenId": "20006732765674855733524007935991362439352594042415161039767275461950712817548"
+        },
+        {
+          "name": "NO",
+          "price": 0.7285,
+          "tokenId": "54533569528927082430133047556849600511985191158927477533124630301934489498530"
+        }
+      ],
+      "volume": 33015916.589842003,
+      "volumeUnit": "usd",
+      "liquidity": 339298.08959,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0x7586a96520578acaaaa4ea84a2582f197f84255da1f3392a7aa300386c187b37",
+        "tokenIds": {
+          "yes": "20006732765674855733524007935991362439352594042415161039767275461950712817548",
+          "no": "54533569528927082430133047556849600511985191158927477533124630301934489498530"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2025-11-14T18:50:42.974Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0x7586a96520578acaaaa4ea84a2582f197f84255da1f3392a7aa300386c187b37",
+        "url": "https://polymarket.com/event/who-will-be-the-next-prime-minister-of-israel-after-the-next-election"
+      }
+    },
+    {
+      "id": "0xc5eae79d1ffe716572353962eb926b1e3964c500a4880a7a94f58408218ee76b",
+      "platform": "polymarket",
+      "eventId": "32228",
+      "question": "2026 Balance of Power: R Senate, R House",
+      "description": "This market will resolve according to the party that wins control of the United States Senate and the party that wins control of the United States House of Representatives in the 2026 United States midterm election.\n\nA party wins control of the United States Senate if it wins a majority of the chamber’s voting seats. If no party wins a majority of voting seats, the party that wins control of the chamber is the party that wins half of the voting seats and holds the Vice Presidency. If the outcome remains ambiguous after applying the above criteria, the chamber will be deemed controlled by the party with which the first selected President Pro Tempore of the Congress that convenes after the specified election is affiliated.\n\nA party wins control of the United States House of Representatives if it wins a majority of the chamber’s voting seats. If no party wins a majority of voting seats, the chamber will be deemed controlled by the party with which the first elected Speaker of the House of the Congress that convenes after the 2026 midterm election is affiliated.\n\nThe following rules govern the counting of seats for determining which party wins control of the chambers.\n\nFor determining Senate control, all regular and special Senate elections that determine representation in the upcoming 120th Congress and are scheduled to take place in November 2026 as of October 31, 2026 are included. Vacant Senate seats for which no election or special election to fill the seat is scheduled to take place in November 2026 as of October 31, 2026 will be treated as held by the party affiliation of the most recent member to hold that seat. For determining House control, all House elections in the 2026 United States midterm election that elect voting members and determine representation in the upcoming 120th Congress are included. Where a Senate or House seat is decided by a runoff, the runoff result will determine attribution of that seat, even if it takes place after November 2026.\n\nFor seats contested in the specified election, seats are attributed to the party under which the member was elected. If a member-elect changes party affiliation, or vacates their seat, between election day and the formal organization of Congress, the seat is attributed to the party under which the member was elected. \n\nFor seats not contested in the specified election, seats are attributed to the party that holds the seat as of the date of the election. If a current sitting member of the U.S. Senate who is not up for election changes party affiliation or vacates their seat after the date of the election, the seat is attributed to the party under which the member was affiliated at the time of the election.\n\nSenate and House members elected as independents who formally caucus with, or, for newly elected members, who announce their intent to caucus with, a party are included in that party’s count. If the caucus decisions of members of the Senate or House elected as independents cannot be determined on the date of the election, this market may remain open until the earlier of (i) an announcement from the relevant members of their intents to caucus, or (ii) January 4th, 11:59 PM ET of the following calendar year. If no such announcement is made by January 4th, 11:59 PM ET of the following calendar year, the member will not count towards the seat count of any party.\n\nThe resolution sources for this market will be official information from relevant state electoral authorities, the United States Congress, and a consensus of credible reporting.",
+      "category": "Global Elections",
+      "tags": [
+        "global-elections",
+        "midterms-control",
+        "midterm-combos",
+        "united-states",
+        "rewards-20-4pt5-50",
+        "politics",
+        "elections",
+        "us-presidential-election",
+        "midterms",
+        "earn-4",
+        "main-election"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/balance-of-power-2024-election-r-Fp-y4ONJBS.jpg",
+      "status": "active",
+      "openTime": "2025-07-11T00:00:00.000Z",
+      "closeTime": "2026-11-04T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.0005,
+          "tokenId": "103704141773947678931823410030956181918562062788486034785782641603149828893320"
+        },
+        {
+          "name": "NO",
+          "price": 0.9995,
+          "tokenId": "25869296386911654049715489068824757745174681288397238521780118949553760488529"
+        }
+      ],
+      "volume": 26196458.923175003,
+      "volumeUnit": "usd",
+      "liquidity": 1458527.49943,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0xc5eae79d1ffe716572353962eb926b1e3964c500a4880a7a94f58408218ee76b",
+        "tokenIds": {
+          "yes": "103704141773947678931823410030956181918562062788486034785782641603149828893320",
+          "no": "25869296386911654049715489068824757745174681288397238521780118949553760488529"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2025-07-11T20:47:55.353Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0xc5eae79d1ffe716572353962eb926b1e3964c500a4880a7a94f58408218ee76b",
+        "url": "https://polymarket.com/event/balance-of-power-2026-midterms"
+      }
+    },
+    {
+      "id": "0x16c63b7cc37f012b9f59ee164ec03877914c701d06d48291ae8d6fc08a088b0d",
+      "platform": "polymarket",
+      "eventId": "32228",
+      "question": "2026 Balance of Power: D Senate, D House",
+      "description": "This market will resolve according to the party that wins control of the United States Senate and the party that wins control of the United States House of Representatives in the 2026 United States midterm election.\n\nA party wins control of the United States Senate if it wins a majority of the chamber’s voting seats. If no party wins a majority of voting seats, the party that wins control of the chamber is the party that wins half of the voting seats and holds the Vice Presidency. If the outcome remains ambiguous after applying the above criteria, the chamber will be deemed controlled by the party with which the first selected President Pro Tempore of the Congress that convenes after the specified election is affiliated.\n\nA party wins control of the United States House of Representatives if it wins a majority of the chamber’s voting seats. If no party wins a majority of voting seats, the chamber will be deemed controlled by the party with which the first elected Speaker of the House of the Congress that convenes after the 2026 midterm election is affiliated.\n\nThe following rules govern the counting of seats for determining which party wins control of the chambers.\n\nFor determining Senate control, all regular and special Senate elections that determine representation in the upcoming 120th Congress and are scheduled to take place in November 2026 as of October 31, 2026 are included. Vacant Senate seats for which no election or special election to fill the seat is scheduled to take place in November 2026 as of October 31, 2026 will be treated as held by the party affiliation of the most recent member to hold that seat. For determining House control, all House elections in the 2026 United States midterm election that elect voting members and determine representation in the upcoming 120th Congress are included. Where a Senate or House seat is decided by a runoff, the runoff result will determine attribution of that seat, even if it takes place after November 2026.\n\nFor seats contested in the specified election, seats are attributed to the party under which the member was elected. If a member-elect changes party affiliation, or vacates their seat, between election day and the formal organization of Congress, the seat is attributed to the party under which the member was elected. \n\nFor seats not contested in the specified election, seats are attributed to the party that holds the seat as of the date of the election. If a current sitting member of the U.S. Senate who is not up for election changes party affiliation or vacates their seat after the date of the election, the seat is attributed to the party under which the member was affiliated at the time of the election.\n\nSenate and House members elected as independents who formally caucus with, or, for newly elected members, who announce their intent to caucus with, a party are included in that party’s count. If the caucus decisions of members of the Senate or House elected as independents cannot be determined on the date of the election, this market may remain open until the earlier of (i) an announcement from the relevant members of their intents to caucus, or (ii) January 4th, 11:59 PM ET of the following calendar year. If no such announcement is made by January 4th, 11:59 PM ET of the following calendar year, the member will not count towards the seat count of any party.\n\nThe resolution sources for this market will be official information from relevant state electoral authorities, the United States Congress, and a consensus of credible reporting.",
+      "category": "Global Elections",
+      "tags": [
+        "global-elections",
+        "midterms-control",
+        "midterm-combos",
+        "united-states",
+        "rewards-20-4pt5-50",
+        "politics",
+        "elections",
+        "us-presidential-election",
+        "midterms",
+        "earn-4",
+        "main-election"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/balance-of-power-2024-election-r-Fp-y4ONJBS.jpg",
+      "status": "active",
+      "openTime": "2025-07-11T00:00:00.000Z",
+      "closeTime": "2026-11-04T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.9995,
+          "tokenId": "34722410608062854697106861099776685947172185964394483545370684749662285977831"
+        },
+        {
+          "name": "NO",
+          "price": 0.0005,
+          "tokenId": "24483563228660028121020430722896740519524131851526579619586176931221901842798"
+        }
+      ],
+      "volume": 19729801.943410996,
+      "volumeUnit": "usd",
+      "liquidity": 1098194.75814,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0x16c63b7cc37f012b9f59ee164ec03877914c701d06d48291ae8d6fc08a088b0d",
+        "tokenIds": {
+          "yes": "34722410608062854697106861099776685947172185964394483545370684749662285977831",
+          "no": "24483563228660028121020430722896740519524131851526579619586176931221901842798"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2025-07-11T20:47:53.368Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0x16c63b7cc37f012b9f59ee164ec03877914c701d06d48291ae8d6fc08a088b0d",
+        "url": "https://polymarket.com/event/balance-of-power-2026-midterms"
+      }
+    },
+    {
+      "id": "0x307a1ed89d60b61002dd5bbf00e1408c5ed2ab3fcdb056191ca7ef9bc34d38f3",
+      "platform": "polymarket",
+      "eventId": "32224",
+      "question": "Will the Democratic Party control the Senate after the 2026 Midterm elections?",
+      "description": "This market will resolve according to the party that wins control of the United States Senate in the 2026 United States midterm election.\n\nA party wins control of the United States Senate if it wins a majority of the chamber’s voting seats. If no party wins a majority of voting seats, the party that wins control of the chamber is the party that wins half of the voting seats and holds the Vice Presidency. If the outcome remains ambiguous after applying the above criteria, the chamber will be deemed controlled by the party with which the first selected President Pro Tempore of the Congress that convenes after the specified election is affiliated.\n\nThe following rules govern the counting of seats for determining which party wins control of the chamber.\n\nAll regular and special Senate elections that determine representation in the upcoming 120th Congress and are scheduled to take place in November 2026 as of October 31, 2026 are included. Runoffs for qualifying elections will determine attribution of the relevant seat, even if they take place after November 2026. Vacant seats for which no election or special election to fill the seat is scheduled to take place in November 2026 as of October 31, 2026 will be treated as held by the party affiliation of the most recent member to hold that seat.\n\nFor seats contested in the specified election, seats are attributed to the party under which the member was elected. If a member-elect changes party affiliation, or vacates their seat, between election day and the formal organization of Congress, the seat is attributed to the party under which the member was elected.\n\nFor seats not contested in the specified election, seats are attributed to the party that holds the seat as of the date of the election. If a current sitting member of the U.S. Senate who is not up for election changes party affiliation or vacates their seat after the date of the election, the seat is attributed to the party under which the member was affiliated at the time of the election.\n\nSenate members elected as independents who formally caucus with, or, for newly elected members, who announce their intent to caucus with, a party are included in that party’s count. If the caucus decisions of members of the Senate elected as independents cannot be determined on the date of the election, this market may remain open until the earlier of (i) an announcement from the relevant members of their intents to caucus, or (ii) January 4th, 11:59 PM ET of the following calendar year. If no such announcement is made by January 4th, 11:59 PM ET of the following calendar year, the member will not count towards the seat count of any party.\n\nThe resolution sources for this market will be official information from relevant state electoral authorities, the United States Congress, and a consensus of credible reporting.",
+      "category": "Senate",
+      "tags": [
+        "senate-elections",
+        "midterms-control",
+        "parent-for-derivative",
+        "united-states",
+        "politics",
+        "us-presidential-election",
+        "midterms",
+        "world-elections",
+        "elections",
+        "global-elections",
+        "earn-4",
+        "congress",
+        "main-election"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-the-democratic-party-control-the-senate-after-the-2026-midterm-elections-JJ9h02JGR09z.png",
+      "status": "active",
+      "openTime": "2025-07-11T00:00:00.000Z",
+      "closeTime": "2026-11-04T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.9995,
+          "tokenId": "113287701564209339913693347405685749986285999146352375265161592243948562084773"
+        },
+        {
+          "name": "NO",
+          "price": 0.0005,
+          "tokenId": "107118433685650702332040991454078902188473746599223732907923581436160160612542"
+        }
+      ],
+      "volume": 17099893.408640996,
+      "volumeUnit": "usd",
+      "liquidity": 2440694.70733,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0x307a1ed89d60b61002dd5bbf00e1408c5ed2ab3fcdb056191ca7ef9bc34d38f3",
+        "tokenIds": {
+          "yes": "113287701564209339913693347405685749986285999146352375265161592243948562084773",
+          "no": "107118433685650702332040991454078902188473746599223732907923581436160160612542"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2025-07-11T19:22:46.116Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0x307a1ed89d60b61002dd5bbf00e1408c5ed2ab3fcdb056191ca7ef9bc34d38f3",
+        "url": "https://polymarket.com/event/which-party-will-win-the-senate-in-2026"
+      }
+    },
+    {
+      "id": "0x0808de4f0cfd47947f2d1be51f9a9c52ea0fec76f73a75cfbe79ddec98d8a908",
+      "platform": "polymarket",
+      "eventId": "32228",
+      "question": "2026 Balance of Power: D Senate, R House",
+      "description": "This market will resolve according to the party that wins control of the United States Senate and the party that wins control of the United States House of Representatives in the 2026 United States midterm election.\n\nA party wins control of the United States Senate if it wins a majority of the chamber’s voting seats. If no party wins a majority of voting seats, the party that wins control of the chamber is the party that wins half of the voting seats and holds the Vice Presidency. If the outcome remains ambiguous after applying the above criteria, the chamber will be deemed controlled by the party with which the first selected President Pro Tempore of the Congress that convenes after the specified election is affiliated.\n\nA party wins control of the United States House of Representatives if it wins a majority of the chamber’s voting seats. If no party wins a majority of voting seats, the chamber will be deemed controlled by the party with which the first elected Speaker of the House of the Congress that convenes after the 2026 midterm election is affiliated.\n\nThe following rules govern the counting of seats for determining which party wins control of the chambers.\n\nFor determining Senate control, all regular and special Senate elections that determine representation in the upcoming 120th Congress and are scheduled to take place in November 2026 as of October 31, 2026 are included. Vacant Senate seats for which no election or special election to fill the seat is scheduled to take place in November 2026 as of October 31, 2026 will be treated as held by the party affiliation of the most recent member to hold that seat. For determining House control, all House elections in the 2026 United States midterm election that elect voting members and determine representation in the upcoming 120th Congress are included. Where a Senate or House seat is decided by a runoff, the runoff result will determine attribution of that seat, even if it takes place after November 2026.\n\nFor seats contested in the specified election, seats are attributed to the party under which the member was elected. If a member-elect changes party affiliation, or vacates their seat, between election day and the formal organization of Congress, the seat is attributed to the party under which the member was elected. \n\nFor seats not contested in the specified election, seats are attributed to the party that holds the seat as of the date of the election. If a current sitting member of the U.S. Senate who is not up for election changes party affiliation or vacates their seat after the date of the election, the seat is attributed to the party under which the member was affiliated at the time of the election.\n\nSenate and House members elected as independents who formally caucus with, or, for newly elected members, who announce their intent to caucus with, a party are included in that party’s count. If the caucus decisions of members of the Senate or House elected as independents cannot be determined on the date of the election, this market may remain open until the earlier of (i) an announcement from the relevant members of their intents to caucus, or (ii) January 4th, 11:59 PM ET of the following calendar year. If no such announcement is made by January 4th, 11:59 PM ET of the following calendar year, the member will not count towards the seat count of any party.\n\nThe resolution sources for this market will be official information from relevant state electoral authorities, the United States Congress, and a consensus of credible reporting.",
+      "category": "Global Elections",
+      "tags": [
+        "global-elections",
+        "midterms-control",
+        "midterm-combos",
+        "united-states",
+        "rewards-20-4pt5-50",
+        "politics",
+        "elections",
+        "us-presidential-election",
+        "midterms",
+        "earn-4",
+        "main-election"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/balance-of-power-2024-election-r-Fp-y4ONJBS.jpg",
+      "status": "active",
+      "openTime": "2025-07-11T00:00:00.000Z",
+      "closeTime": "2026-11-04T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.0005,
+          "tokenId": "70997927349469817841862065582625658840347600365813612622959588796331622340305"
+        },
+        {
+          "name": "NO",
+          "price": 0.9995,
+          "tokenId": "45720947308530468765087874228584729250108790729495800420104302263408503667446"
+        }
+      ],
+      "volume": 11873309.842492,
+      "volumeUnit": "usd",
+      "liquidity": 1119629.38613,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0x0808de4f0cfd47947f2d1be51f9a9c52ea0fec76f73a75cfbe79ddec98d8a908",
+        "tokenIds": {
+          "yes": "70997927349469817841862065582625658840347600365813612622959588796331622340305",
+          "no": "45720947308530468765087874228584729250108790729495800420104302263408503667446"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2025-07-11T20:47:54.232Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0x0808de4f0cfd47947f2d1be51f9a9c52ea0fec76f73a75cfbe79ddec98d8a908",
+        "url": "https://polymarket.com/event/balance-of-power-2026-midterms"
+      }
+    },
+    {
+      "id": "0x3738ad9665480991affe3ba286cd035516e17d1f8b7703e05088ec19c70c21a4",
+      "platform": "polymarket",
+      "eventId": "1038648",
+      "question": "US x Iran ceasefire continues through October 31?",
+      "description": "This market will resolve to “No” if the United States takes a qualifying military action against Iran by the specified date, 11:59 PM Iran Standard Time. Otherwise this market will resolve to “Yes.”\n\nA qualifying military action refers to an air strike or a surface-to-surface missile strike, initiated by the United States, that directly impacts Iran. An air strike includes bombs, air-to-surface missiles, and air-launched drones. A surface-to-surface missile strike includes one-way attack drones and surface-to-surface missiles such as cruise or ballistic missiles.\n\nThe following actions do not constitute a qualifying military action:\nMunitions destroyed or intercepted before impact;\nSurface-to-air missile strikes;\nSmall-arms fire;\nGround incursions;\nCyber operations;\nNaval gunfire and artillery fire;\nHowitzers, artillery pieces, mortars, and rocket artillery (e.g. MLRS systems);\nMinor surface-to-surface strikes, including short range loitering munitions, FPV drones, and ATGM strikes;\nAny threat, authorization, or announcement of force that has not been executed.\n\nAny munition that is intercepted or destroyed before impact does not constitute a qualifying military action. Debris, fragments, or any wreckage from intercepted munitions that land on Iran do not constitute a military action regardless of any damage incurred.\n\n“Iran” refers to the terrestrial territory of Iran, including its internal waters. Iran’s maritime territory and airspace are not encompassed. Where territorial borders are disputed, all territory claimed by and under the de facto control of Iran as of market creation will qualify.\n\nThe occurrence, attribution, and timing of a qualifying military action will be primarily determined based on a consensus of information available from the resolution sources. Where multiple sources conflict regarding the occurrence, attribution, or timing of a relevant military action, this market will remain open until the earlier of: i) the confirmation of the occurrence, attribution, and timing of the action based on a consensus of information available from the resolution sources or ii) 3 full calendar days (Iran Standard Time) from the date of the first credibly reported evidence of the action. If this period would extend past the end date, this market will remain open to allow for 3 full calendar days to pass. At the end of the third calendar day, if conflicting reports remain, the incident will be adjudicated based on the totality of information available from the resolution sources at that time. No single statement, denial, or presentation of evidence will govern where it is contradicted by the totality of information.\n\nThe resolution sources for this market will be official information from the governments and militaries of the United States and Iran and a consensus of credible reporting.",
+      "category": "Iran",
+      "tags": [
+        "iran",
+        "trump",
+        "israel",
+        "military",
+        "politics",
+        "geopolitics",
+        "middle-east",
+        "israel-x-iran",
+        "military-action",
+        "military-strikes",
+        "trump-iran",
+        "diplomacy-ceasefire"
+      ],
+      "imageUrl": null,
+      "status": "active",
+      "openTime": "2026-09-17T00:00:00.000Z",
+      "closeTime": "2026-10-31T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.9985,
+          "tokenId": "67102598924726349989742049657609063097299442010642912942032681022413402597017"
+        },
+        {
+          "name": "NO",
+          "price": 0.0015,
+          "tokenId": "114475889232765203212032217024645308497828327658421967586050553616813506019119"
+        }
+      ],
+      "volume": 10836748.475241,
+      "volumeUnit": "usd",
+      "liquidity": 125065.45279,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0x3738ad9665480991affe3ba286cd035516e17d1f8b7703e05088ec19c70c21a4",
+        "tokenIds": {
+          "yes": "67102598924726349989742049657609063097299442010642912942032681022413402597017",
+          "no": "114475889232765203212032217024645308497828327658421967586050553616813506019119"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2026-09-17T15:54:12.416Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0x3738ad9665480991affe3ba286cd035516e17d1f8b7703e05088ec19c70c21a4",
+        "url": "https://polymarket.com/event/us-iran-ceasefire-continues-throughptptpt"
+      }
+    },
+    {
+      "id": "0x998bc71817b2d76921d1999ce0f3431cfd5945583667a371280ca2b430b0c06e",
+      "platform": "polymarket",
+      "eventId": "32228",
+      "question": "2026 Balance of Power: R Senate, D House",
+      "description": "This market will resolve according to the party that wins control of the United States Senate and the party that wins control of the United States House of Representatives in the 2026 United States midterm election.\n\nA party wins control of the United States Senate if it wins a majority of the chamber’s voting seats. If no party wins a majority of voting seats, the party that wins control of the chamber is the party that wins half of the voting seats and holds the Vice Presidency. If the outcome remains ambiguous after applying the above criteria, the chamber will be deemed controlled by the party with which the first selected President Pro Tempore of the Congress that convenes after the specified election is affiliated.\n\nA party wins control of the United States House of Representatives if it wins a majority of the chamber’s voting seats. If no party wins a majority of voting seats, the chamber will be deemed controlled by the party with which the first elected Speaker of the House of the Congress that convenes after the 2026 midterm election is affiliated.\n\nThe following rules govern the counting of seats for determining which party wins control of the chambers.\n\nFor determining Senate control, all regular and special Senate elections that determine representation in the upcoming 120th Congress and are scheduled to take place in November 2026 as of October 31, 2026 are included. Vacant Senate seats for which no election or special election to fill the seat is scheduled to take place in November 2026 as of October 31, 2026 will be treated as held by the party affiliation of the most recent member to hold that seat. For determining House control, all House elections in the 2026 United States midterm election that elect voting members and determine representation in the upcoming 120th Congress are included. Where a Senate or House seat is decided by a runoff, the runoff result will determine attribution of that seat, even if it takes place after November 2026.\n\nFor seats contested in the specified election, seats are attributed to the party under which the member was elected. If a member-elect changes party affiliation, or vacates their seat, between election day and the formal organization of Congress, the seat is attributed to the party under which the member was elected. \n\nFor seats not contested in the specified election, seats are attributed to the party that holds the seat as of the date of the election. If a current sitting member of the U.S. Senate who is not up for election changes party affiliation or vacates their seat after the date of the election, the seat is attributed to the party under which the member was affiliated at the time of the election.\n\nSenate and House members elected as independents who formally caucus with, or, for newly elected members, who announce their intent to caucus with, a party are included in that party’s count. If the caucus decisions of members of the Senate or House elected as independents cannot be determined on the date of the election, this market may remain open until the earlier of (i) an announcement from the relevant members of their intents to caucus, or (ii) January 4th, 11:59 PM ET of the following calendar year. If no such announcement is made by January 4th, 11:59 PM ET of the following calendar year, the member will not count towards the seat count of any party.\n\nThe resolution sources for this market will be official information from relevant state electoral authorities, the United States Congress, and a consensus of credible reporting.",
+      "category": "Global Elections",
+      "tags": [
+        "global-elections",
+        "midterms-control",
+        "midterm-combos",
+        "united-states",
+        "rewards-20-4pt5-50",
+        "politics",
+        "elections",
+        "us-presidential-election",
+        "midterms",
+        "earn-4",
+        "main-election"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/balance-of-power-2024-election-r-Fp-y4ONJBS.jpg",
+      "status": "active",
+      "openTime": "2025-07-11T00:00:00.000Z",
+      "closeTime": "2026-11-04T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.0005,
+          "tokenId": "6302359956133594764084277082169634158291609371270652093164054687145970756151"
+        },
+        {
+          "name": "NO",
+          "price": 0.9995,
+          "tokenId": "558600218792430158020964384658762756367786275998757133304987611939841005404"
+        }
+      ],
+      "volume": 10577412.704926997,
+      "volumeUnit": "usd",
+      "liquidity": 1467965.78387,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0x998bc71817b2d76921d1999ce0f3431cfd5945583667a371280ca2b430b0c06e",
+        "tokenIds": {
+          "yes": "6302359956133594764084277082169634158291609371270652093164054687145970756151",
+          "no": "558600218792430158020964384658762756367786275998757133304987611939841005404"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2025-07-11T20:47:54.792Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0x998bc71817b2d76921d1999ce0f3431cfd5945583667a371280ca2b430b0c06e",
+        "url": "https://polymarket.com/event/balance-of-power-2026-midterms"
+      }
+    },
+    {
+      "id": "0xa32317ba83c3c83dc43ef260c3744c22ed8000db53d30bc09372c45cff5fb07a",
+      "platform": "polymarket",
+      "eventId": "1262243",
+      "question": "Will Republicans lose the Alaska, Iowa, Kansas, Maine, Michigan, Ohio, and Texas Senate seats?",
+      "description": "This market will resolve according to which of the United States Senate general elections in Alaska, Iowa, Kansas, Maine, Michigan, Ohio (special election), and Texas, currently scheduled for November 3, 2026, are won by the Republican candidate, inclusive of any potential runoffs.\n\nEach listed outcome names the exact set of these states in which the Republican candidate wins. An outcome will resolve to \"Yes\" only if the Republican candidate wins every state it names and does not win any of the other states covered by this market. A state counts as not won by the Republican candidate if any other candidate wins it, including a Democratic, independent, or third-party candidate, or if its results cannot be determined by March 31, 2027. \n\nA candidate will be considered to represent the Republican Party by their ballot-listed affiliation or if they are the nominee of the Republican Party. Candidates who run as independents will not be considered to represent the Republican Party regardless of any affiliation they may have with the party.\n\nThe resolution source for this market is the Associated Press, Fox News, and NBC. This market will resolve once all three sources have conclusively called the relevant elections. If all three sources do not achieve consensus in calling the relevant races for this market, it will resolve based on the official certification.",
+      "category": "Politics",
+      "tags": [
+        "politics",
+        "election",
+        "us-presidential-election",
+        "iowa-midterm",
+        "ohio-midterm",
+        "maine-midterm",
+        "texas-midterm",
+        "alaska-midterm",
+        "kansas-midterm",
+        "michigan-midterm",
+        "senate-elections",
+        "midterms",
+        "build-your-map",
+        "build-your-own-map",
+        "map",
+        "senate-map"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-senate-pass-funding-bill-by-7NO2CCO7a2Mk.png",
+      "status": "active",
+      "openTime": "2026-10-26T00:00:00.000Z",
+      "closeTime": "2026-11-03T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.8545,
+          "tokenId": "13535941900723044344907002451427688051727855016747811259193368015899108383450"
+        },
+        {
+          "name": "NO",
+          "price": 0.1455,
+          "tokenId": "80727480162707694817992062873857913056698208056368499870278974630056151503113"
+        }
+      ],
+      "volume": 9438419.879373003,
+      "volumeUnit": "usd",
+      "liquidity": 21229.1337,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0xa32317ba83c3c83dc43ef260c3744c22ed8000db53d30bc09372c45cff5fb07a",
+        "tokenIds": {
+          "yes": "13535941900723044344907002451427688051727855016747811259193368015899108383450",
+          "no": "80727480162707694817992062873857913056698208056368499870278974630056151503113"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2026-10-26T22:17:33.960Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0xa32317ba83c3c83dc43ef260c3744c22ed8000db53d30bc09372c45cff5fb07a",
+        "url": "https://polymarket.com/event/which-tossup-senate-states-will-republicans-win-ak-ia-ks-me-mi-oh-tx"
+      }
+    },
+    {
+      "id": "0xdbe93b5a701f36076a560fa4b9ba59e365a6e8e2ea6a83764640010657277ca4",
+      "platform": "polymarket",
+      "eventId": "81557",
+      "question": "Will Gadi Eizenkot be the next Prime Minister of Israel?",
+      "description": "Legislative elections are schedule to be held in Israel on October 27, 2026. \n\nThis market will resolve to the next individual who is officially appointed and sworn in as Prime Minister of Israel following the 2026 parliamentary election. If an election is called early, this market will immediately resolve to the individual who is officially appointed and sworn in after that election.\n\nTo count for resolution, the individual must be formally sworn in. Any interim or caretaker Prime Minister will not count toward the resolution of this market.\n\nIf no such Prime Minister is sworn in by December 31, 2027, 11:59 PM ET, this market will resolve to “Other”.\n\nThe primary resolution source for this market will be official information from the Government of Israel; however, a consensus of credible reporting may also be used.",
+      "category": "Israel Election",
+      "tags": [
+        "israel-election",
+        "politics",
+        "elections",
+        "middle-east",
+        "israel",
+        "global-elections",
+        "geopolitics",
+        "world",
+        "trump-netanyahu",
+        "world-elections",
+        "main-election"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/israel-gadi-eizenkot-ccb92a000c.jpg",
+      "status": "active",
+      "openTime": "2025-11-15T00:00:00.000Z",
+      "closeTime": "2026-10-28T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.5505,
+          "tokenId": "52487256270918227930942830546248720603566203568229607048093730748840489555808"
+        },
+        {
+          "name": "NO",
+          "price": 0.4495,
+          "tokenId": "1507744758511144558263623459899956467548763419522526462308518027912401299177"
+        }
+      ],
+      "volume": 8192177.107385,
+      "volumeUnit": "usd",
+      "liquidity": 107839.46966,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0xdbe93b5a701f36076a560fa4b9ba59e365a6e8e2ea6a83764640010657277ca4",
+        "tokenIds": {
+          "yes": "52487256270918227930942830546248720603566203568229607048093730748840489555808",
+          "no": "1507744758511144558263623459899956467548763419522526462308518027912401299177"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2025-11-14T18:50:44.437Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0xdbe93b5a701f36076a560fa4b9ba59e365a6e8e2ea6a83764640010657277ca4",
+        "url": "https://polymarket.com/event/who-will-be-the-next-prime-minister-of-israel-after-the-next-election"
+      }
+    },
+    {
+      "id": "0x7987a821b8032824f1805ee39eb5dfb8f64603e4e9e673259eb76f82b439fd3d",
+      "platform": "polymarket",
+      "eventId": "32228",
+      "question": "2026 Balance of Power: Other",
+      "description": "This market will resolve according to the party that wins control of the United States Senate and the party that wins control of the United States House of Representatives in the 2026 United States midterm election.\n\nA party wins control of the United States Senate if it wins a majority of the chamber’s voting seats. If no party wins a majority of voting seats, the party that wins control of the chamber is the party that wins half of the voting seats and holds the Vice Presidency. If the outcome remains ambiguous after applying the above criteria, the chamber will be deemed controlled by the party with which the first selected President Pro Tempore of the Congress that convenes after the specified election is affiliated.\n\nA party wins control of the United States House of Representatives if it wins a majority of the chamber’s voting seats. If no party wins a majority of voting seats, the chamber will be deemed controlled by the party with which the first elected Speaker of the House of the Congress that convenes after the 2026 midterm election is affiliated.\n\nThe following rules govern the counting of seats for determining which party wins control of the chambers.\n\nFor determining Senate control, all regular and special Senate elections that determine representation in the upcoming 120th Congress and are scheduled to take place in November 2026 as of October 31, 2026 are included. Vacant Senate seats for which no election or special election to fill the seat is scheduled to take place in November 2026 as of October 31, 2026 will be treated as held by the party affiliation of the most recent member to hold that seat. For determining House control, all House elections in the 2026 United States midterm election that elect voting members and determine representation in the upcoming 120th Congress are included. Where a Senate or House seat is decided by a runoff, the runoff result will determine attribution of that seat, even if it takes place after November 2026.\n\nFor seats contested in the specified election, seats are attributed to the party under which the member was elected. If a member-elect changes party affiliation, or vacates their seat, between election day and the formal organization of Congress, the seat is attributed to the party under which the member was elected. \n\nFor seats not contested in the specified election, seats are attributed to the party that holds the seat as of the date of the election. If a current sitting member of the U.S. Senate who is not up for election changes party affiliation or vacates their seat after the date of the election, the seat is attributed to the party under which the member was affiliated at the time of the election.\n\nSenate and House members elected as independents who formally caucus with, or, for newly elected members, who announce their intent to caucus with, a party are included in that party’s count. If the caucus decisions of members of the Senate or House elected as independents cannot be determined on the date of the election, this market may remain open until the earlier of (i) an announcement from the relevant members of their intents to caucus, or (ii) January 4th, 11:59 PM ET of the following calendar year. If no such announcement is made by January 4th, 11:59 PM ET of the following calendar year, the member will not count towards the seat count of any party.\n\nThe resolution sources for this market will be official information from relevant state electoral authorities, the United States Congress, and a consensus of credible reporting.",
+      "category": "Global Elections",
+      "tags": [
+        "global-elections",
+        "midterms-control",
+        "midterm-combos",
+        "united-states",
+        "rewards-20-4pt5-50",
+        "politics",
+        "elections",
+        "us-presidential-election",
+        "midterms",
+        "earn-4",
+        "main-election"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/balance-of-power-2024-election-r-Fp-y4ONJBS.jpg",
+      "status": "active",
+      "openTime": "2025-07-11T00:00:00.000Z",
+      "closeTime": "2026-11-04T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.0005,
+          "tokenId": "35477631289241705233759154026285946627439635224019448868888132647783862821489"
+        },
+        {
+          "name": "NO",
+          "price": 0.9995,
+          "tokenId": "58154574909590813657096858535882625339077077643653677858955479541043465171526"
+        }
+      ],
+      "volume": 6795842.024129,
+      "volumeUnit": "usd",
+      "liquidity": 1543047.59089,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0x7987a821b8032824f1805ee39eb5dfb8f64603e4e9e673259eb76f82b439fd3d",
+        "tokenIds": {
+          "yes": "35477631289241705233759154026285946627439635224019448868888132647783862821489",
+          "no": "58154574909590813657096858535882625339077077643653677858955479541043465171526"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2025-07-11T20:47:55.924Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0x7987a821b8032824f1805ee39eb5dfb8f64603e4e9e673259eb76f82b439fd3d",
+        "url": "https://polymarket.com/event/balance-of-power-2026-midterms"
+      }
+    },
+    {
+      "id": "0x9ed0ecc8b8589e67967d44c4420944a41b6a6806419019a1581d514174eee9b1",
+      "platform": "polymarket",
+      "eventId": "81557",
+      "question": "Will Naftali Bennett be the next Prime Minister of Israel?",
+      "description": "Legislative elections are schedule to be held in Israel on October 27, 2026. \n\nThis market will resolve to the next individual who is officially appointed and sworn in as Prime Minister of Israel following the 2026 parliamentary election. If an election is called early, this market will immediately resolve to the individual who is officially appointed and sworn in after that election.\n\nTo count for resolution, the individual must be formally sworn in. Any interim or caretaker Prime Minister will not count toward the resolution of this market.\n\nIf no such Prime Minister is sworn in by December 31, 2027, 11:59 PM ET, this market will resolve to “Other”.\n\nThe primary resolution source for this market will be official information from the Government of Israel; however, a consensus of credible reporting may also be used.",
+      "category": "Israel Election",
+      "tags": [
+        "israel-election",
+        "politics",
+        "elections",
+        "middle-east",
+        "israel",
+        "global-elections",
+        "geopolitics",
+        "world",
+        "trump-netanyahu",
+        "world-elections",
+        "main-election"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/israel-naftali-bennett-f03400507a.jpg",
+      "status": "active",
+      "openTime": "2025-11-15T00:00:00.000Z",
+      "closeTime": "2026-10-28T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.0535,
+          "tokenId": "58945936829392654397399777214757608864525173988558750256164021442231118224154"
+        },
+        {
+          "name": "NO",
+          "price": 0.9465,
+          "tokenId": "39409206330527880169507414405291721950884951005340760541937649898052386499519"
+        }
+      ],
+      "volume": 5650992.003175,
+      "volumeUnit": "usd",
+      "liquidity": 52986.9767,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0x9ed0ecc8b8589e67967d44c4420944a41b6a6806419019a1581d514174eee9b1",
+        "tokenIds": {
+          "yes": "58945936829392654397399777214757608864525173988558750256164021442231118224154",
+          "no": "39409206330527880169507414405291721950884951005340760541937649898052386499519"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2025-11-14T18:50:43.425Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0x9ed0ecc8b8589e67967d44c4420944a41b6a6806419019a1581d514174eee9b1",
+        "url": "https://polymarket.com/event/who-will-be-the-next-prime-minister-of-israel-after-the-next-election"
+      }
+    },
+    {
+      "id": "0xadffc96f54f350b3655f72fe2853c81bfd705e9703f62469e6a14782ad5d4ec0",
+      "platform": "polymarket",
+      "eventId": "81557",
+      "question": "Will Avigdor Lieberman be the next Prime Minister of Israel?",
+      "description": "Legislative elections are schedule to be held in Israel on October 27, 2026. \n\nThis market will resolve to the next individual who is officially appointed and sworn in as Prime Minister of Israel following the 2026 parliamentary election. If an election is called early, this market will immediately resolve to the individual who is officially appointed and sworn in after that election.\n\nTo count for resolution, the individual must be formally sworn in. Any interim or caretaker Prime Minister will not count toward the resolution of this market.\n\nIf no such Prime Minister is sworn in by December 31, 2027, 11:59 PM ET, this market will resolve to “Other”.\n\nThe primary resolution source for this market will be official information from the Government of Israel; however, a consensus of credible reporting may also be used.",
+      "category": "Israel Election",
+      "tags": [
+        "israel-election",
+        "politics",
+        "elections",
+        "middle-east",
+        "israel",
+        "global-elections",
+        "geopolitics",
+        "world",
+        "trump-netanyahu",
+        "world-elections",
+        "main-election"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/israel-avigdor-lieberman-c7d6358ef7.jpg",
+      "status": "active",
+      "openTime": "2025-11-15T00:00:00.000Z",
+      "closeTime": "2026-10-28T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.036,
+          "tokenId": "105057524965982907913786325697426001538810836564004836999292309706852745390829"
+        },
+        {
+          "name": "NO",
+          "price": 0.964,
+          "tokenId": "13887896800265966487014179943559375403384011039339488276489274832989862323735"
+        }
+      ],
+      "volume": 4917233.063423999,
+      "volumeUnit": "usd",
+      "liquidity": 71726.0544,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0xadffc96f54f350b3655f72fe2853c81bfd705e9703f62469e6a14782ad5d4ec0",
+        "tokenIds": {
+          "yes": "105057524965982907913786325697426001538810836564004836999292309706852745390829",
+          "no": "13887896800265966487014179943559375403384011039339488276489274832989862323735"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2025-11-14T18:50:45.462Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0xadffc96f54f350b3655f72fe2853c81bfd705e9703f62469e6a14782ad5d4ec0",
+        "url": "https://polymarket.com/event/who-will-be-the-next-prime-minister-of-israel-after-the-next-election"
+      }
+    },
+    {
+      "id": "0x9345d5142a67f5541264c96515496affee02580f1c572680759eac9fd2a1588a",
+      "platform": "polymarket",
+      "eventId": "64731",
+      "question": "Billionaire one-time wealth tax passes in California election 2026?",
+      "description": "A one-time wealth tax on billionaires has been proposed to potentially appear on California's ballot for the November 3, 2026 general election. You can read more about that here: https://6abc.com/post/california-union-proposes-taxing-billionaires-offset-medicaid-cuts-low-income-people/18066430/\n\nThis market will resolve to \"Yes\" if any proposition containing a one-time tax targeting individuals, households, or family units with wealth, assets, or net worth of at least $1 billion (USD or equivalent) passes in the named election. Otherwise, this market will resolve to \"No\".\n\nIf no qualifying ballot initiative is certified to appear on the official statewide California ballot as a proposition to be voted on in the stated election by June 25, 2026, 11:59 PM ET (the official cutoff date for new initiatives to be approved), or if all qualifying propositions/initiatives are removed from the ballot or amended before the election such that the main threshold drops below $1 billion, this market will resolve \"No\".\n\nThe primary resolution source for this market will be official information from the Government of the State of California, however a consensus of credible reporting may also be used.",
+      "category": "Taxes",
+      "tags": [
+        "taxes",
+        "ballot-measures",
+        "referendum",
+        "referendums-midterms",
+        "fiscal",
+        "politics",
+        "elections"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/billionaire-one-time-wealth-tax-on-california-ballot-Cu7EZFeYeO2R.jpg",
+      "status": "active",
+      "openTime": "2025-10-24T00:00:00.000Z",
+      "closeTime": "2026-11-04T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.0345,
+          "tokenId": "38487155026041533062980821872238023790862908049855818921747904019478875496931"
+        },
+        {
+          "name": "NO",
+          "price": 0.9655,
+          "tokenId": "7330556727383706468662351173040823924339817877848787483691015397124505109410"
+        }
+      ],
+      "volume": 4771363.007679,
+      "volumeUnit": "usd",
+      "liquidity": 39244.59135,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0x9345d5142a67f5541264c96515496affee02580f1c572680759eac9fd2a1588a",
+        "tokenIds": {
+          "yes": "38487155026041533062980821872238023790862908049855818921747904019478875496931",
+          "no": "7330556727383706468662351173040823924339817877848787483691015397124505109410"
+        },
+        "resolutionSource": "https://6abc.com/post/california-union-proposes-taxing-billionaires-offset-medicaid-cuts-low-income-people/18066430/"
+      },
+      "createdAt": "2025-10-24T17:46:31.141Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0x9345d5142a67f5541264c96515496affee02580f1c572680759eac9fd2a1588a",
+        "url": "https://polymarket.com/event/billionaire-one-time-wealth-tax-passes-in-california-election-2026"
+      }
+    },
+    {
+      "id": "0x405b56fc75f56d7635a94df9836d6cb6f9b9571d1fd33eb165c1e59d1d11801f",
+      "platform": "polymarket",
+      "eventId": "830253",
+      "question": "Strait of Hormuz traffic returns to normal by October 31?",
+      "description": "This market will resolve to “Yes” if IMF Portwatch publishes a 7-day moving average of transit calls (“Arrivals of Ships”) for the Strait of Hormuz equal to or above 60 for any date between market creation and October 31, 2026. Otherwise, this market will resolve to “No”.\n\nDaily transit calls include container, dry bulk, roll-on/roll-off, general cargo, and tanker ships. Ships not reported by IMF Portwatch will not be considered.\n\nThis market will resolve as soon as IMF Portwatch publishes a 7-day moving average of transit calls equal to or above the specified level, or once data has been published for the final date in the specified period and no such value has been published. If no data has been published for the final date of the specified period within 14 calendar days (ET) after the end of that period, this market will resolve based on data published up to that point.\n\nRevisions to previously published data points made within this market’s timeframe will be considered. However, they will not disqualify a previously published data point from qualifying. Revisions to previously published data points after data is published for October 31, 2026, however, will not be considered.\n\nIn case of obvious data integrity issues (i.e., erroneous data), the market may remain open until the end of the third calendar day (ET) after the date on which such data is first released to allow for corrections. Data integrity issues refer only to clerical or other similar errors in the underlying data, and do not include cases where IMF Portwatch differs from alternative sources.\n\nThe resolution source for this market will be IMF Portwatch, specifically the transit calls data published for the Strait of Hormuz at https://portwatch.imf.org/pages/cb5856222a5b4105adc6ee7e880a1730, both in the chart and through downloadable files.",
+      "category": "Oil",
+      "tags": [
+        "oil",
+        "iran",
+        "hormuz",
+        "politics",
+        "geopolitics",
+        "strait-of-hormuz"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-ships-transit-the-strait-of-hormuz-on-any-day-in-march-ERARnetK0FJm.jpg",
+      "status": "active",
+      "openTime": "2026-08-11T00:00:00.000Z",
+      "closeTime": "2026-11-01T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.001,
+          "tokenId": "65318042793305154928481822061228422214615698483328483747495637152414701080541"
+        },
+        {
+          "name": "NO",
+          "price": 0.999,
+          "tokenId": "112428165813371561912833460698436648539922320261306010177252036814838759682453"
+        }
+      ],
+      "volume": 4675534.055516999,
+      "volumeUnit": "usd",
+      "liquidity": 282975.55835,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0x405b56fc75f56d7635a94df9836d6cb6f9b9571d1fd33eb165c1e59d1d11801f",
+        "tokenIds": {
+          "yes": "65318042793305154928481822061228422214615698483328483747495637152414701080541",
+          "no": "112428165813371561912833460698436648539922320261306010177252036814838759682453"
+        },
+        "resolutionSource": "https://portwatch.imf.org/pages/cb5856222a5b4105adc6ee7e880a1730"
+      },
+      "createdAt": "2026-08-10T22:38:21.735Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0x405b56fc75f56d7635a94df9836d6cb6f9b9571d1fd33eb165c1e59d1d11801f",
+        "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-october-31-20260810151043583"
+      }
+    },
+    {
+      "id": "0x694595d0a008f10e4701285d071e4b08407495f6f8a6bd8cbdd7de522fa9b463",
+      "platform": "polymarket",
+      "eventId": "57111",
+      "question": "Will Nithya Raman win the 2026 Los Angeles mayoral election?",
+      "description": "The 2026 Los Angeles mayoral election will be held on June 2, 2026, to elect the mayor of Los Angeles, California. If no candidate receives a majority of the vote, a runoff election will be held on November 3, 2026.\n\nThis market will resolve according to the candidate that wins the election.\n\nThe primary resolution source for this market will be a consensus of credible reporting; however, if there is any ambiguity in the results, this market will resolve according to official information from the City of Los Angeles.",
+      "category": "LA",
+      "tags": [
+        "la",
+        "mayoral-races",
+        "los-angeles-mayoral-election",
+        "la-mayor",
+        "politics",
+        "elections",
+        "us-presidential-election",
+        "mayor",
+        "los-angeles",
+        "mayoral-elections"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-nithya-raman-win-the-2026-los-angeles-mayoral-election-sVKhbp4tGVUy.jpg",
+      "status": "active",
+      "openTime": "2025-10-09T00:00:00.000Z",
+      "closeTime": "2026-06-03T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.986,
+          "tokenId": "50292933818751585369672690878774599873941191925538325333138798248932182222864"
+        },
+        {
+          "name": "NO",
+          "price": 0.014,
+          "tokenId": "58507084608782512565480280053882807505189448738098588563704773804344223603355"
+        }
+      ],
+      "volume": 4359042.876536,
+      "volumeUnit": "usd",
+      "liquidity": 49385.62573,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0x694595d0a008f10e4701285d071e4b08407495f6f8a6bd8cbdd7de522fa9b463",
+        "tokenIds": {
+          "yes": "50292933818751585369672690878774599873941191925538325333138798248932182222864",
+          "no": "58507084608782512565480280053882807505189448738098588563704773804344223603355"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2025-10-09T20:11:23.339Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0x694595d0a008f10e4701285d071e4b08407495f6f8a6bd8cbdd7de522fa9b463",
+        "url": "https://polymarket.com/event/los-angeles-mayoral-election-117"
+      }
+    },
+    {
+      "id": "0xa653be0f150dbe055a532ea02977338bb31f49d1f723b2a48c1f67847a73cb7d",
+      "platform": "polymarket",
+      "eventId": "81557",
+      "question": "Will Yossi Cohen be the next Prime Minister of Israel?",
+      "description": "Legislative elections are schedule to be held in Israel on October 27, 2026. \n\nThis market will resolve to the next individual who is officially appointed and sworn in as Prime Minister of Israel following the 2026 parliamentary election. If an election is called early, this market will immediately resolve to the individual who is officially appointed and sworn in after that election.\n\nTo count for resolution, the individual must be formally sworn in. Any interim or caretaker Prime Minister will not count toward the resolution of this market.\n\nIf no such Prime Minister is sworn in by December 31, 2027, 11:59 PM ET, this market will resolve to “Other”.\n\nThe primary resolution source for this market will be official information from the Government of Israel; however, a consensus of credible reporting may also be used.",
+      "category": "Israel Election",
+      "tags": [
+        "israel-election",
+        "politics",
+        "elections",
+        "middle-east",
+        "israel",
+        "global-elections",
+        "geopolitics",
+        "world",
+        "trump-netanyahu",
+        "world-elections",
+        "main-election"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/israel-yossi-cohen-88b739d047.jpg",
+      "status": "active",
+      "openTime": "2025-11-15T00:00:00.000Z",
+      "closeTime": "2026-10-28T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.007,
+          "tokenId": "80908635602471552886049573110321791161186841957249509900771759394573505359926"
+        },
+        {
+          "name": "NO",
+          "price": 0.993,
+          "tokenId": "279135026232966548267372221910300904521833390614952028405533756942338898146"
+        }
+      ],
+      "volume": 4316798.501372,
+      "volumeUnit": "usd",
+      "liquidity": 447274.42221,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0xa653be0f150dbe055a532ea02977338bb31f49d1f723b2a48c1f67847a73cb7d",
+        "tokenIds": {
+          "yes": "80908635602471552886049573110321791161186841957249509900771759394573505359926",
+          "no": "279135026232966548267372221910300904521833390614952028405533756942338898146"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2025-11-14T18:50:45.876Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0xa653be0f150dbe055a532ea02977338bb31f49d1f723b2a48c1f67847a73cb7d",
+        "url": "https://polymarket.com/event/who-will-be-the-next-prime-minister-of-israel-after-the-next-election"
+      }
+    },
+    {
+      "id": "0xd116777a710b6a7c336fe12cbf742fafb0d8ac508cf400446159973cec9aec29",
+      "platform": "polymarket",
+      "eventId": "1262243",
+      "question": "Will Republicans win Iowa, and lose Alaska, Kansas, Maine, Michigan, Ohio, and Texas?",
+      "description": "This market will resolve according to which of the United States Senate general elections in Alaska, Iowa, Kansas, Maine, Michigan, Ohio (special election), and Texas, currently scheduled for November 3, 2026, are won by the Republican candidate, inclusive of any potential runoffs.\n\nEach listed outcome names the exact set of these states in which the Republican candidate wins. An outcome will resolve to \"Yes\" only if the Republican candidate wins every state it names and does not win any of the other states covered by this market. A state counts as not won by the Republican candidate if any other candidate wins it, including a Democratic, independent, or third-party candidate, or if its results cannot be determined by March 31, 2027. \n\nA candidate will be considered to represent the Republican Party by their ballot-listed affiliation or if they are the nominee of the Republican Party. Candidates who run as independents will not be considered to represent the Republican Party regardless of any affiliation they may have with the party.\n\nThe resolution source for this market is the Associated Press, Fox News, and NBC. This market will resolve once all three sources have conclusively called the relevant elections. If all three sources do not achieve consensus in calling the relevant races for this market, it will resolve based on the official certification.",
+      "category": "Politics",
+      "tags": [
+        "politics",
+        "election",
+        "us-presidential-election",
+        "iowa-midterm",
+        "ohio-midterm",
+        "maine-midterm",
+        "texas-midterm",
+        "alaska-midterm",
+        "kansas-midterm",
+        "michigan-midterm",
+        "senate-elections",
+        "midterms",
+        "build-your-map",
+        "build-your-own-map",
+        "map",
+        "senate-map"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-senate-pass-funding-bill-by-7NO2CCO7a2Mk.png",
+      "status": "active",
+      "openTime": "2026-10-26T00:00:00.000Z",
+      "closeTime": "2026-11-03T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.0005,
+          "tokenId": "106253100341058888227154298197221161777912145262343559280892425406157624656915"
+        },
+        {
+          "name": "NO",
+          "price": 0.9995,
+          "tokenId": "38883886691124225989332035378913105158890603529288875957747834557386418386450"
+        }
+      ],
+      "volume": 3501027.273089,
+      "volumeUnit": "usd",
+      "liquidity": 106903.79345,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0xd116777a710b6a7c336fe12cbf742fafb0d8ac508cf400446159973cec9aec29",
+        "tokenIds": {
+          "yes": "106253100341058888227154298197221161777912145262343559280892425406157624656915",
+          "no": "38883886691124225989332035378913105158890603529288875957747834557386418386450"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2026-10-26T22:17:28.863Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0xd116777a710b6a7c336fe12cbf742fafb0d8ac508cf400446159973cec9aec29",
+        "url": "https://polymarket.com/event/which-tossup-senate-states-will-republicans-win-ak-ia-ks-me-mi-oh-tx"
+      }
+    },
+    {
+      "id": "0x564959d4c61eeb7c568d6f8e4f5a0dcf3622434d4f264d418d9674102e5a7a88",
+      "platform": "polymarket",
+      "eventId": "1262243",
+      "question": "Will Republicans win Iowa and Kansas, and lose Alaska, Maine, Michigan, Ohio, and Texas?",
+      "description": "This market will resolve according to which of the United States Senate general elections in Alaska, Iowa, Kansas, Maine, Michigan, Ohio (special election), and Texas, currently scheduled for November 3, 2026, are won by the Republican candidate, inclusive of any potential runoffs.\n\nEach listed outcome names the exact set of these states in which the Republican candidate wins. An outcome will resolve to \"Yes\" only if the Republican candidate wins every state it names and does not win any of the other states covered by this market. A state counts as not won by the Republican candidate if any other candidate wins it, including a Democratic, independent, or third-party candidate, or if its results cannot be determined by March 31, 2027. \n\nA candidate will be considered to represent the Republican Party by their ballot-listed affiliation or if they are the nominee of the Republican Party. Candidates who run as independents will not be considered to represent the Republican Party regardless of any affiliation they may have with the party.\n\nThe resolution source for this market is the Associated Press, Fox News, and NBC. This market will resolve once all three sources have conclusively called the relevant elections. If all three sources do not achieve consensus in calling the relevant races for this market, it will resolve based on the official certification.",
+      "category": "Politics",
+      "tags": [
+        "politics",
+        "election",
+        "us-presidential-election",
+        "iowa-midterm",
+        "ohio-midterm",
+        "maine-midterm",
+        "texas-midterm",
+        "alaska-midterm",
+        "kansas-midterm",
+        "michigan-midterm",
+        "senate-elections",
+        "midterms",
+        "build-your-map",
+        "build-your-own-map",
+        "map",
+        "senate-map"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-senate-pass-funding-bill-by-7NO2CCO7a2Mk.png",
+      "status": "active",
+      "openTime": "2026-10-26T00:00:00.000Z",
+      "closeTime": "2026-11-03T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.0005,
+          "tokenId": "105070040449310495327131730101841566321530681945885747881686068698995174349681"
+        },
+        {
+          "name": "NO",
+          "price": 0.9995,
+          "tokenId": "111381299800799485509083912497813429956512687399857260440199290536659860679263"
+        }
+      ],
+      "volume": 3335763.408186,
+      "volumeUnit": "usd",
+      "liquidity": 225225.90301,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0x564959d4c61eeb7c568d6f8e4f5a0dcf3622434d4f264d418d9674102e5a7a88",
+        "tokenIds": {
+          "yes": "105070040449310495327131730101841566321530681945885747881686068698995174349681",
+          "no": "111381299800799485509083912497813429956512687399857260440199290536659860679263"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2026-10-26T22:17:19.890Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0x564959d4c61eeb7c568d6f8e4f5a0dcf3622434d4f264d418d9674102e5a7a88",
+        "url": "https://polymarket.com/event/which-tossup-senate-states-will-republicans-win-ak-ia-ks-me-mi-oh-tx"
+      }
+    },
+    {
+      "id": "0x8cbdd0c4c6061c9e5c5a94d4a474c1880d0f2ab5ee4704a64af1e77c6d0e18d0",
+      "platform": "polymarket",
+      "eventId": "81557",
+      "question": "Will Amir Ohana be the next Prime Minister of Israel?",
+      "description": "Legislative elections are schedule to be held in Israel on October 27, 2026. \n\nThis market will resolve to the next individual who is officially appointed and sworn in as Prime Minister of Israel following the 2026 parliamentary election. If an election is called early, this market will immediately resolve to the individual who is officially appointed and sworn in after that election.\n\nTo count for resolution, the individual must be formally sworn in. Any interim or caretaker Prime Minister will not count toward the resolution of this market.\n\nIf no such Prime Minister is sworn in by December 31, 2027, 11:59 PM ET, this market will resolve to “Other”.\n\nThe primary resolution source for this market will be official information from the Government of Israel; however, a consensus of credible reporting may also be used.",
+      "category": "Israel Election",
+      "tags": [
+        "israel-election",
+        "politics",
+        "elections",
+        "middle-east",
+        "israel",
+        "global-elections",
+        "geopolitics",
+        "world",
+        "trump-netanyahu",
+        "world-elections",
+        "main-election"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/israel-amir-ohana-ba4e395dcb.jpg",
+      "status": "active",
+      "openTime": "2025-11-15T00:00:00.000Z",
+      "closeTime": "2026-10-28T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.006,
+          "tokenId": "37479008447091488432468168948590430208783407360102685992956858050228448972626"
+        },
+        {
+          "name": "NO",
+          "price": 0.994,
+          "tokenId": "41333421621477427665902688863282016198906123342253538564690329473274114306953"
+        }
+      ],
+      "volume": 3192572.9649120006,
+      "volumeUnit": "usd",
+      "liquidity": 111878.28807,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0x8cbdd0c4c6061c9e5c5a94d4a474c1880d0f2ab5ee4704a64af1e77c6d0e18d0",
+        "tokenIds": {
+          "yes": "37479008447091488432468168948590430208783407360102685992956858050228448972626",
+          "no": "41333421621477427665902688863282016198906123342253538564690329473274114306953"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2025-11-14T18:50:50.681Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0x8cbdd0c4c6061c9e5c5a94d4a474c1880d0f2ab5ee4704a64af1e77c6d0e18d0",
+        "url": "https://polymarket.com/event/who-will-be-the-next-prime-minister-of-israel-after-the-next-election"
+      }
+    }
+  ],
+  "pagination": {
+    "cursor": "eyJwbUN1cnNvciI6IjQ3ZUFtdlRwNTZxbUFrMlRjZjY2c0FKZVRqbXpKdXJqX2hvMHYzRzJBa0o3SW5ZaU9qRXNJbXNpT2lKdFlYSnJaWFJ6SWl3aWIyZ2lPaUl3WW1RNU9UVm1ZMlUxTnpVd1pEbGlNalZrTUdNNU1XRmlNMkUzTXpVNE1ETmtZakJsWVRSbFlXTTRNREJsWlRSbU9UazBOREk1WXpZMk4yTXpNMkl4SWl3aWEyVjVjeUk2VzNzaWRDSTZJbVpzYjJGMElpd2lkaUk2TXpFNU1qVTNNaTQ1TmpRNU1USXdNREEyZlN4N0luUWlPaUp6ZEhKcGJtY2lMQ0oySWpvaU5qZ3lOekl4SW4xZGZRIiwiZnAiOiJjMzAwZTAzMWEyZDdiMWUxIn0",
+    "pageSize": 20
+  }
+}

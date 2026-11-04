@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "proxyWallet": "0x56687bf447db6ffa42ffe2204a05edaa20f55839",
+      "asset": "71321045679252212594626385532706912750332728571942612009397583165281712267356",
+      "conditionId": "0xaa22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917",
+      "avgPrice": 0.41,
+      "totalBought": 820,
+      "realizedPnl": 1180,
+      "curPrice": 1,
+      "timestamp": 1761955200,
+      "title": "Lakers vs. Celtics",
+      "slug": "nba-lal-bos-2025-11-01",
+      "icon": null,
+      "eventSlug": "nba-lal-bos-2025-11-01",
+      "outcome": "Lakers",
+      "outcomeIndex": 0,
+      "oppositeOutcome": "Celtics",
+      "oppositeAsset": "5239841276582930182",
+      "endDate": "2025-11-01T23:00:00Z"
+    }
+  ],
+  "pagination": { "pageSize": 50, "pageNumber": 0 }
+}

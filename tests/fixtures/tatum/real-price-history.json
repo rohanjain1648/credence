@@ -1,0 +1,11 @@
+{
+  "data": {
+    "marketId": "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+    "platform": "polymarket",
+    "interval": "1h",
+    "source": "candlesticks",
+    "candles": [],
+    "partial": false,
+    "availableFrom": "2026-11-03T10:45:33.386Z"
+  }
+}

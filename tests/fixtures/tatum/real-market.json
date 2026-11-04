@@ -1,0 +1,47 @@
+{
+  "data": {
+    "id": "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+    "platform": "polymarket",
+    "eventId": "73130",
+    "question": "Will the U.S. invade Iran before 2027?",
+    "description": "This market will resolve to \"Yes\" if the United States commences a military offensive intended to establish control over any portion of Iran by December 31, 2026, 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nFor the purposes of this market, land de facto controlled by Iran or the United States as of November 4, 2025 12:00 PM ET, will be considered the sovereign territory of that country.\n\nThe resolution source for this market will be a consensus of credible sources.",
+    "category": null,
+    "tags": [],
+    "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-the-us-invade-iran-in-2025-0Eh3J0ku_Fbj.jpg",
+    "status": "active",
+    "openTime": "2025-11-05T00:00:00.000Z",
+    "closeTime": "2027-01-01T00:00:00.000Z",
+    "settleTime": null,
+    "outcomes": [
+      {
+        "name": "YES",
+        "price": 0.145,
+        "tokenId": "55115078421062885512539156303747803058407616201213034911037320915726138659123"
+      },
+      {
+        "name": "NO",
+        "price": 0.855,
+        "tokenId": "1910830010387565971650098373488592514702818137344973088263643820608151819241"
+      }
+    ],
+    "volume": 77364388.32300802,
+    "volumeUnit": "usd",
+    "liquidity": 327563.4288,
+    "resolution": null,
+    "chain": {
+      "chainId": 137,
+      "conditionId": "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+      "tokenIds": {
+        "yes": "55115078421062885512539156303747803058407616201213034911037320915726138659123",
+        "no": "1910830010387565971650098373488592514702818137344973088263643820608151819241"
+      },
+      "resolutionSource": "UMA"
+    },
+    "createdAt": "2025-11-04T19:52:57.799Z",
+    "source": {
+      "platform": "polymarket",
+      "platformId": "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+      "url": "https://polymarket.com/event/will-the-us-invade-iran-before-2027"
+    }
+  }
+}

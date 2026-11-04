@@ -1,0 +1,169 @@
+{
+  "data": [
+    {
+      "id": "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+      "platform": "polymarket",
+      "eventId": "73130",
+      "question": "Will the U.S. invade Iran before 2027?",
+      "description": "This market will resolve to \"Yes\" if the United States commences a military offensive intended to establish control over any portion of Iran by December 31, 2026, 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nFor the purposes of this market, land de facto controlled by Iran or the United States as of November 4, 2025 12:00 PM ET, will be considered the sovereign territory of that country.\n\nThe resolution source for this market will be a consensus of credible sources.",
+      "category": "U.S. x Iran",
+      "tags": [
+        "trump-iran",
+        "macro-geopolitics",
+        "military-strikes",
+        "politics",
+        "iran",
+        "trump",
+        "middle-east",
+        "israel",
+        "geopolitics",
+        "world"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-the-us-invade-iran-in-2025-0Eh3J0ku_Fbj.jpg",
+      "status": "active",
+      "openTime": "2025-11-05T00:00:00.000Z",
+      "closeTime": "2027-01-01T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.145,
+          "tokenId": "55115078421062885512539156303747803058407616201213034911037320915726138659123"
+        },
+        {
+          "name": "NO",
+          "price": 0.855,
+          "tokenId": "1910830010387565971650098373488592514702818137344973088263643820608151819241"
+        }
+      ],
+      "volume": 77364388.32300802,
+      "volumeUnit": "usd",
+      "liquidity": 327563.4288,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+        "tokenIds": {
+          "yes": "55115078421062885512539156303747803058407616201213034911037320915726138659123",
+          "no": "1910830010387565971650098373488592514702818137344973088263643820608151819241"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2025-11-04T19:52:57.799Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846",
+        "url": "https://polymarket.com/event/will-the-us-invade-iran-before-2027"
+      }
+    },
+    {
+      "id": "0x0b4cc3b739e1dfe5d73274740e7308b6fb389c5af040c3a174923d928d134bee",
+      "platform": "polymarket",
+      "eventId": "90178",
+      "question": "Will Jesus Christ return before 2027?",
+      "description": "This market will resolve to \"Yes\" if The Second Coming of Jesus Christ occurs by December 31, 2026, 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nThe resolution source for this market will be a consensus of credible sources.",
+      "category": "Culture",
+      "tags": [
+        "pop-culture",
+        "parent-for-derivative"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-jesus-christ-return-in-2025-qulWN7QCehv8.jpg",
+      "status": "active",
+      "openTime": "2025-11-25T00:00:00.000Z",
+      "closeTime": "2027-01-01T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.0065,
+          "tokenId": "69324317355037271422943965141382095011871956039434394956830818206664869608517"
+        },
+        {
+          "name": "NO",
+          "price": 0.9935,
+          "tokenId": "51797157743046504218541616681751597845468055908324407922581755135522797852101"
+        }
+      ],
+      "volume": 66946617.870037004,
+      "volumeUnit": "usd",
+      "liquidity": 411974.90495,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0x0b4cc3b739e1dfe5d73274740e7308b6fb389c5af040c3a174923d928d134bee",
+        "tokenIds": {
+          "yes": "69324317355037271422943965141382095011871956039434394956830818206664869608517",
+          "no": "51797157743046504218541616681751597845468055908324407922581755135522797852101"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2025-11-25T15:12:00.761Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0x0b4cc3b739e1dfe5d73274740e7308b6fb389c5af040c3a174923d928d134bee",
+        "url": "https://polymarket.com/event/will-jesus-christ-return-before-2027"
+      }
+    },
+    {
+      "id": "0x836b850fc838195374862551a36f1c8691d96ff01e58b0a071f0fc1a0e357fb1",
+      "platform": "polymarket",
+      "eventId": "31552",
+      "question": "Will LeBron James win the 2028 US Presidential Election?",
+      "description": "The 2028 US Presidential Election is scheduled to take place on November 7, 2028.\n\nThis market will resolve to the person who wins the 2028 US Presidential Election.\n\nThe resolution source for this market is the Associated Press, Fox News, and NBC. This market will resolve once all three sources call the race for the same candidate. If all three sources haven’t called the race for the same candidate by the inauguration date (January 20, 2029) this market will resolve based on who is inaugurated.",
+      "category": "President",
+      "tags": [
+        "president",
+        "parent-for-derivative",
+        "2028-election",
+        "united-states",
+        "politics",
+        "elections",
+        "us-presidential-election",
+        "world-elections",
+        "global-elections",
+        "earn-4",
+        "main-election"
+      ],
+      "imageUrl": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Lebron_James.png",
+      "status": "active",
+      "openTime": "2025-07-11T00:00:00.000Z",
+      "closeTime": "2028-11-08T00:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.0005,
+          "tokenId": "39223330966352513418907732239455948906399882924787587183466504819170775983376"
+        },
+        {
+          "name": "NO",
+          "price": 0.9995,
+          "tokenId": "50862799703982327636174441241062907649998751737045006653560124656563256528691"
+        }
+      ],
+      "volume": 55184710.09873299,
+      "volumeUnit": "usd",
+      "liquidity": 2201338.07207,
+      "resolution": null,
+      "chain": {
+        "chainId": 137,
+        "conditionId": "0x836b850fc838195374862551a36f1c8691d96ff01e58b0a071f0fc1a0e357fb1",
+        "tokenIds": {
+          "yes": "39223330966352513418907732239455948906399882924787587183466504819170775983376",
+          "no": "50862799703982327636174441241062907649998751737045006653560124656563256528691"
+        },
+        "resolutionSource": "UMA"
+      },
+      "createdAt": "2025-07-08T19:06:10.305Z",
+      "source": {
+        "platform": "polymarket",
+        "platformId": "0x836b850fc838195374862551a36f1c8691d96ff01e58b0a071f0fc1a0e357fb1",
+        "url": "https://polymarket.com/event/presidential-election-winner-2028"
+      }
+    }
+  ],
+  "pagination": {
+    "cursor": "eyJwbUN1cnNvciI6InptSkNNWk1id2xxUWdyeFhwNWRoeHE5S2xvaGZJbXRhZUR1UXp6TERkX1Y3SW5ZaU9qRXNJbXNpT2lKdFlYSnJaWFJ6SWl3aWIyZ2lPaUl3WW1RNU9UVm1ZMlUxTnpVd1pEbGlNalZrTUdNNU1XRmlNMkUzTXpVNE1ETmtZakJsWVRSbFlXTTRNREJsWlRSbU9UazBOREk1WXpZMk4yTXpNMkl4SWl3aWEyVjVjeUk2VzNzaWRDSTZJbVpzYjJGMElpd2lkaUk2TlRVeE9EUTNNVEF1TURrNE56TXlPVGw5TEhzaWRDSTZJbk4wY21sdVp5SXNJbllpT2lJMU5qRXlOVEVpZlYxOSIsImZwIjoiMTU1NGUyMWYyMWI1MjJkMSJ9",
+    "pageSize": 3
+  }
+}

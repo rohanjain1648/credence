@@ -1,0 +1,125 @@
+{
+  "data": [
+    {
+      "id": "KXNEXTNATOSECGEN-99-KIOH",
+      "platform": "kalshi",
+      "eventId": "KXNEXTNATOSECGEN-99",
+      "question": "Will Klaus Iohannis be the next Secretary General of NATO?",
+      "description": "If Klaus Iohannis formally holds the position of Secretary General of NATO, and is the first such subject to do so after Issuance, then the market resolves to Yes.",
+      "category": "Elections",
+      "tags": [
+        "International"
+      ],
+      "imageUrl": "https://assets.kalshi.com/market-images/KXNEXTNATOSECGEN-99-KIOH.png?v=37c347ab4b",
+      "status": "active",
+      "openTime": "2026-06-29T19:47:00.000Z",
+      "closeTime": "2099-01-08T15:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.04,
+          "tokenId": null
+        },
+        {
+          "name": "NO",
+          "price": 0.96,
+          "tokenId": null
+        }
+      ],
+      "volume": 383.36,
+      "volumeUnit": "contracts",
+      "liquidity": null,
+      "resolution": null,
+      "chain": null,
+      "createdAt": "2026-06-29T19:31:47.731Z",
+      "source": {
+        "platform": "kalshi",
+        "platformId": "KXNEXTNATOSECGEN-99-KIOH",
+        "url": "https://kalshi.com/markets/kxnextnatosecgen"
+      }
+    },
+    {
+      "id": "KXNEXTNATOSECGEN-99-KKAL",
+      "platform": "kalshi",
+      "eventId": "KXNEXTNATOSECGEN-99",
+      "question": "Will Kaja Kallas be the next Secretary General of NATO?",
+      "description": "If Kaja Kallas formally holds the position of Secretary General of NATO, and is the first such subject to do so after Issuance, then the market resolves to Yes.",
+      "category": "Elections",
+      "tags": [
+        "International"
+      ],
+      "imageUrl": "https://assets.kalshi.com/market-images/KXNEXTNATOSECGEN-99-KKAL.png?v=f8f751d5f4",
+      "status": "active",
+      "openTime": "2026-06-29T19:47:00.000Z",
+      "closeTime": "2099-01-08T15:00:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.12,
+          "tokenId": null
+        },
+        {
+          "name": "NO",
+          "price": 0.88,
+          "tokenId": null
+        }
+      ],
+      "volume": 1956.64,
+      "volumeUnit": "contracts",
+      "liquidity": null,
+      "resolution": null,
+      "chain": null,
+      "createdAt": "2026-06-29T19:31:47.731Z",
+      "source": {
+        "platform": "kalshi",
+        "platformId": "KXNEXTNATOSECGEN-99-KKAL",
+        "url": "https://kalshi.com/markets/kxnextnatosecgen"
+      }
+    },
+    {
+      "id": "KXELONMARS-99",
+      "platform": "kalshi",
+      "eventId": "KXELONMARS-99",
+      "question": "Will Elon Musk visit Mars before Aug 1, 2099?",
+      "description": "If Elon Musk visits Mars before the earlier of his death or Aug 1, 2099, then the market resolves to Yes.",
+      "category": "Science and Technology",
+      "tags": [
+        "Space"
+      ],
+      "imageUrl": "https://assets.kalshi.com/series-images-webp/KXELONMARS.webp",
+      "status": "active",
+      "openTime": "2025-08-28T20:45:00.000Z",
+      "closeTime": "2099-08-01T04:59:00.000Z",
+      "settleTime": null,
+      "outcomes": [
+        {
+          "name": "YES",
+          "price": 0.09,
+          "tokenId": null
+        },
+        {
+          "name": "NO",
+          "price": 0.91,
+          "tokenId": null
+        }
+      ],
+      "volume": 123776.63,
+      "volumeUnit": "contracts",
+      "liquidity": null,
+      "resolution": null,
+      "chain": null,
+      "createdAt": "2025-08-28T20:40:16.168Z",
+      "source": {
+        "platform": "kalshi",
+        "platformId": "KXELONMARS-99",
+        "url": "https://kalshi.com/markets/kxelonmars"
+      }
+    }
+  ],
+  "pagination": {
+    "cursor": "eyJrYUN1cnNvciI6ImV5SmpJanB1ZFd4c0xDSnZJam96ZlEiLCJmcCI6IjYyMjVhNzRjZDUxYThmNzQifQ",
+    "pageSize": 3
+  }
+}

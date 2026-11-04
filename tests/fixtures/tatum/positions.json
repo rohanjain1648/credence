@@ -1,0 +1,51 @@
+{
+  "data": [
+    {
+      "token": "71321045679252212594626385532706912750332728571942612009397583165281712267356",
+      "positions": [
+        {
+          "proxyWallet": "0x56687bf447db6ffa42ffe2204a05edaa20f55839",
+          "name": "JaneDoe",
+          "profileImage": "https://polymarket.com/avatars/jane.png",
+          "verified": false,
+          "asset": "71321045679252212594626385532706912750332728571942612009397583165281712267356",
+          "conditionId": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917",
+          "avgPrice": 0.38,
+          "size": 12500,
+          "currPrice": 0.42,
+          "currentValue": 5250,
+          "cashPnl": 500,
+          "totalBought": 4750,
+          "realizedPnl": 0,
+          "totalPnl": 500,
+          "outcome": "YES",
+          "outcomeIndex": 0
+        }
+      ]
+    },
+    {
+      "token": "5239841276582930182",
+      "positions": [
+        {
+          "proxyWallet": "0x0000000000000000000000000000000000000abc",
+          "name": null,
+          "profileImage": null,
+          "verified": false,
+          "asset": "5239841276582930182",
+          "conditionId": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917",
+          "avgPrice": 0.6,
+          "size": 900,
+          "currPrice": 0.58,
+          "currentValue": 522,
+          "cashPnl": -18,
+          "totalBought": 540,
+          "realizedPnl": 0,
+          "totalPnl": -18,
+          "outcome": "NO",
+          "outcomeIndex": 1
+        }
+      ]
+    }
+  ],
+  "pagination": { "pageSize": 50, "pageNumber": 0 }
+}
