@@ -8,21 +8,44 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Call public endpoints and docs
+      - name: Summarize the v2 OpenAPI spec
         run: |
-          M=0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846
-          W=0xf0318c32136c2db7fec88b84869aee6a1106c80c
-          show() { echo "=== $1"; curl -sSL --max-time 20 -w "\nHTTP %{http_code}\n" "$1" | head -c "${2:-3000}"; echo; }
-          show "https://data-api.polymarket.com/v2/holders?condition=$M&limit=2"
-          curl -sSL --max-time 30 "https://docs.polymarket.com/_llms/en/api-reference.txt" -o ref.txt
-          echo "=== api reference: $(wc -c < ref.txt) bytes"
-          grep -n -i -E "data-api|/v2/" ref.txt | head -60
-          echo "=== data api endpoint pages"
-          grep -o -E "https://docs.polymarket.com/api-reference/[a-z0-9/_-]+\.md" ref.txt | sort -u | grep -i -E "data|position|holder|leader|activity|trade|value" | head -40
-      - name: Try likely v2 paths for settled positions
-        run: |
-          W=0xf0318c32136c2db7fec88b84869aee6a1106c80c
-          for p in "positions?user=$W&limit=1" "positions?user=$W&closed=true&limit=1" "closed_positions?user=$W&limit=1" "users/$W/closed-positions?limit=1" "users/$W/positions?limit=1" "activity?user=$W&limit=1"; do
-            echo "=== v2/$p"
-            curl -sSL --max-time 20 -w "\nHTTP %{http_code}\n" "https://data-api.polymarket.com/v2/$p" | head -c 1500; echo
-          done
+          curl -sSL --max-time 30 https://data-api.polymarket.com/v2/openapi.json -o spec.json
+          python3 - <<'PY'
+          import json
+          s = json.load(open("spec.json"))
+          comps = s.get("components", {}).get("schemas", {})
+          def ref(o):
+              while isinstance(o, dict) and "$ref" in o:
+                  o = comps.get(o["$ref"].split("/")[-1], {})
+              return o
+          def fields(schema, depth=0):
+              schema = ref(schema)
+              if schema.get("type") == "array" or "items" in schema:
+                  return fields(schema.get("items", {}), depth)
+              props = schema.get("properties", {})
+              out = []
+              for k, v in props.items():
+                  v2 = ref(v)
+                  t = v2.get("type", "obj")
+                  if k == "data" and depth == 0:
+                      out.append("data[]: " + ", ".join(fields(v2, 1)))
+                  elif t in ("array", "object") and depth < 2 and (v2.get("properties") or v2.get("items")):
+                      out.append(f"{k}{{" + ", ".join(fields(v2, depth + 1)) + "}")
+                  else:
+                      out.append(f"{k}:{t}")
+              return out
+          for path, ops in s.get("paths", {}).items():
+              for m, op in ops.items():
+                  if m != "get": continue
+                  params = []
+                  for p in op.get("parameters", []):
+                      p = ref(p); sc = ref(p.get("schema", {}))
+                      extra = ("=" + "|".join(map(str, sc["enum"]))) if "enum" in sc else ""
+                      params.append(f"{p.get('name')}{'*' if p.get('required') else ''}{extra}")
+                  print(f"\n## GET {path}  -- {op.get('summary','')}")
+                  print("params:", ", ".join(params))
+                  r = op.get("responses", {}).get("200", {}).get("content", {}).get("application/json", {}).get("schema", {})
+                  if path.rstrip("/").split("/")[-1] in ("holders", "positions", "leaderboard", "closed-positions", "closed_positions", "activity") or "closed" in path:
+                      print("fields:", "; ".join(fields(r)))
+          PY
