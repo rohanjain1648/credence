@@ -1,0 +1,22 @@
+name: probe polymarket data api
+
+# Temporary: checks Polymarket's public data API from outside India, where it is blocked. No secrets used.
+on: workflow_dispatch
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Call public endpoints
+        run: |
+          M=0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846
+          W=0x56687bf447db6ffa42ffe2204a05edaa20f55839
+          for u in \
+            "https://data-api.polymarket.com/holders?market=$M&limit=2" \
+            "https://data-api.polymarket.com/closed-positions?user=$W&limit=2" \
+            "https://data-api.polymarket.com/v1/leaderboard?category=SPORTS&timePeriod=MONTH&limit=2"; do
+            echo "=== $u"
+            curl -sS --max-time 20 -w "\nHTTP %{http_code} in %{time_total}s\n" "$u" | head -c 2500
+            echo
+          done
