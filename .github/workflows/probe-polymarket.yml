@@ -11,11 +11,18 @@ jobs:
       - name: Call public endpoints and docs
         run: |
           M=0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846
-          W=0x56687bf447db6ffa42ffe2204a05edaa20f55839
-          show() { echo "=== $1"; curl -sSL --max-time 20 -w "\nHTTP %{http_code}\n" "$1" | head -c "${2:-2500}"; echo; }
-          show "https://data-api.polymarket.com/v2/" 6000
-          show "https://data-api.polymarket.com/v2/holders?market=$M&limit=2"
-          show "https://data-api.polymarket.com/v2/closed-positions?user=$W&limit=2"
-          show "https://data-api.polymarket.com/v2/leaderboard?category=SPORTS&timePeriod=MONTH&limit=2"
-          show "https://docs.polymarket.com/llms.txt" 8000
-          curl -sSL --max-time 20 "https://docs.polymarket.com/api-reference/data-api/overview" | sed -e 's/<script[^>]*>[^<]*<\/script>//g' -e 's/<[^>]*>/ /g' | tr -s ' \n' ' ' | grep -o -i -E ".{0,200}(v2|retir|migrat|holders|closed-positions|leaderboard).{0,200}" | head -30
+          W=0xf0318c32136c2db7fec88b84869aee6a1106c80c
+          show() { echo "=== $1"; curl -sSL --max-time 20 -w "\nHTTP %{http_code}\n" "$1" | head -c "${2:-3000}"; echo; }
+          show "https://data-api.polymarket.com/v2/holders?condition=$M&limit=2"
+          curl -sSL --max-time 30 "https://docs.polymarket.com/_llms/en/api-reference.txt" -o ref.txt
+          echo "=== api reference: $(wc -c < ref.txt) bytes"
+          grep -n -i -E "data-api|/v2/" ref.txt | head -60
+          echo "=== data api endpoint pages"
+          grep -o -E "https://docs.polymarket.com/api-reference/[a-z0-9/_-]+\.md" ref.txt | sort -u | grep -i -E "data|position|holder|leader|activity|trade|value" | head -40
+      - name: Try likely v2 paths for settled positions
+        run: |
+          W=0xf0318c32136c2db7fec88b84869aee6a1106c80c
+          for p in "positions?user=$W&limit=1" "positions?user=$W&closed=true&limit=1" "closed_positions?user=$W&limit=1" "users/$W/closed-positions?limit=1" "users/$W/positions?limit=1" "activity?user=$W&limit=1"; do
+            echo "=== v2/$p"
+            curl -sSL --max-time 20 -w "\nHTTP %{http_code}\n" "https://data-api.polymarket.com/v2/$p" | head -c 1500; echo
+          done
