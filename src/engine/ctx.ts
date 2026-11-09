@@ -3,6 +3,8 @@ import { getDb, type Db } from "@/lib/db/client";
 import { apiUsage } from "@/lib/db/schema";
 import { features, getEnv } from "@/lib/env";
 import { getMemory, type MemWalLike } from "@/lib/memory/client";
+import { createPolymarketWalletApi } from "@/lib/polymarket/dataApi";
+import { withWalletFallback } from "@/lib/polymarket/fallback";
 import { TatumHttp } from "@/lib/tatum/http";
 import { createPredictionApi, type PredictionApi } from "@/lib/tatum/prediction";
 
@@ -53,7 +55,11 @@ function createTatum(db: Db, now: () => number): PredictionApi | null {
       await db.insert(apiUsage).values({ provider: "tatum", endpoint: u.endpoint, credits: u.credits, status: u.status, ts: u.ts });
     },
   });
-  return createPredictionApi(http);
+  return withWalletFallback(createPredictionApi(http), createPolymarketWalletApi(), {
+    mode: env.WALLET_DATA_SOURCE,
+    now,
+    log: (m) => console.log(m),
+  });
 }
 
 /** Wires live dependencies; any field passed in `over` (even `null`) replaces the default. */

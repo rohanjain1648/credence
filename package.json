@@ -14,7 +14,8 @@
     "smoke": "tsx --conditions=react-server --env-file=.env.local scripts/smoke.ts",
     "capture:fixtures": "tsx --conditions=react-server --env-file=.env.local scripts/capture-fixtures.ts",
     "snapshot:election": "tsx --conditions=react-server --env-file=.env.local scripts/snapshot-election.ts",
-    "election:calls": "tsx --conditions=react-server --env-file=.env.local scripts/election-calls.ts"
+    "election:calls": "tsx --conditions=react-server --env-file=.env.local scripts/election-calls.ts",
+    "check:polymarket": "tsx --conditions=react-server scripts/check-polymarket.ts"
   },
   "dependencies": {
     "@libsql/client": "^0.18.0",

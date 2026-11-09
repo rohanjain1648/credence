@@ -21,6 +21,8 @@ const EnvSchema = z.object({
   ODDS_API_KEY: optional,
   CRON_SECRET: optional,
   AMNESIA_ENABLED: z.preprocess((v) => v === "true" || v === "1", z.boolean()),
+  /** Where wallet data comes from: Tatum, Polymarket's public v2 API, or Tatum with Polymarket as fallback. */
+  WALLET_DATA_SOURCE: z.preprocess((v) => (v === "" ? undefined : v), z.enum(["auto", "tatum", "polymarket"]).default("auto")),
 });
 
 export type Env = z.infer<typeof EnvSchema>;

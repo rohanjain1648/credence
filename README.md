@@ -527,6 +527,7 @@ The `npm run` engine scripts load `.env.local` and stop with `node: .env.local: 
 | `DATABASE_URL` | Local SQLite file, or `libsql://…` for Turso | `file:./data/credence.db` |
 | `DATABASE_AUTH_TOKEN` | Turso only | None |
 | `CRON_SECRET` | `POST /api/cron/tick` | None (route returns 503) |
+| `WALLET_DATA_SOURCE` | Where wallet data comes from: `auto` (Tatum, switching to Polymarket's public v2 API for 30 minutes after a Tatum outage), `tatum` or `polymarket` | `auto` |
 
 `SUI_RECEIPTS_PRIVATE_KEY`, `SUI_RECEIPTS_PACKAGE_ID`, `ODDS_API_KEY` and `AMNESIA_ENABLED` are parsed, but no feature uses them yet.
 
@@ -616,7 +617,7 @@ npx next typegen && npx tsc --noEmit  # type check; route types must be generate
 
 ## Known limitations
 
-- **Tatum's wallet endpoints currently fail.** As of 2026-11-04, positions, wallet history and top traders return `500 internal.error` for every parameter combination tried, while market endpoints work. Without them there are no holder snapshots, credibility scores or Sharp Lines.
+- **Tatum's wallet endpoints currently fail.** Positions, wallet history and top traders return `500`. Polymarket retired its Data API v1 (it now answers `410`), which those endpoints appear to depend on. Credence falls back to Polymarket's public v2 API for wallet data (see `WALLET_DATA_SOURCE`). Polymarket is blocked in some countries, including India, so the fallback only works from servers outside them. `npm run check:polymarket` tests it.
 - **Market discovery relies on one query.** Tatum's `category` and `tag` filters returned nothing on the live API, even for its documented example, and many markets stay `active` after their close time. Credence uses newest-first with a $10,000 volume floor, so low-volume markets and those closing beyond 3 days aren't tracked.
 - **Kalshi prices need manual pairs.** See [Pairing with Kalshi](#pairing-with-kalshi).
 - **Close times are coarse.** Many markets close at midnight UTC, which can be before the event itself. Picks and final calls therefore happen earlier than necessary, never later.
