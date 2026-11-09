@@ -50,6 +50,7 @@
   --color-won: var(--won);
   --color-lost: var(--lost);
   --font-sans: var(--font-grotesk);
+  --font-numeric: var(--font-barlow), var(--font-grotesk), sans-serif;
 }
 
 body {

@@ -39,9 +39,14 @@ export type RadarRow = {
   kalshiA: number | null;
   sharpGap: number | null;
   venueGap: number | null;
+  /** Other open markets in the same event (e.g. other brackets), folded into this row. */
+  siblings: number;
 };
 
 const CANDIDATES = 300;
+/** Below 3% or above 97% a market is all but decided and crowds out the ones worth reading. */
+const LONG_SHOT = 0.03;
+const isLongShot = (p: number | null) => p !== null && (p < LONG_SHOT || p > 1 - LONG_SHOT);
 
 async function latestLine(db: Db, marketId: string): Promise<LineRow | null> {
   const [row] = await db.select().from(sharpLines).where(eq(sharpLines.marketId, marketId)).orderBy(desc(sharpLines.ts), desc(sharpLines.id)).limit(1);
@@ -52,15 +57,26 @@ const gapOf = (r: RadarRow) => Math.max(Math.abs(r.sharpGap ?? 0), Math.abs(r.ve
 const hasGap = (r: RadarRow) => r.sharpGap !== null || r.venueGap !== null;
 
 /** Open Polymarket markets, biggest disagreement (credible money or Kalshi vs the crowd) first. */
-export async function getRadar(db: Db, o: { group?: Group; limit: number; now?: number }): Promise<RadarRow[]> {
+export async function getRadar(db: Db, o: { group?: Group; limit: number; now?: number; includeLongShots?: boolean }): Promise<RadarRow[]> {
   const now = o.now ?? Date.now();
   const filters = [eq(markets.platform, "polymarket"), isNull(markets.resolution), gt(markets.closeTime, now)];
   if (o.group) filters.push(eq(markets.group, o.group));
   const open = await db.select().from(markets).where(and(...filters)).orderBy(desc(markets.volume)).limit(CANDIDATES);
 
+  // Markets arrive biggest first, so the first one seen per event becomes that event's row.
+  const shown = new Map<string, number>();
   const rows: RadarRow[] = [];
   for (const market of open) {
     const priceA = market.outcomes.length === 2 ? market.outcomes[0].price : null;
+    if (!o.includeLongShots && isLongShot(priceA)) continue;
+    if (market.eventId) {
+      const at = shown.get(market.eventId);
+      if (at !== undefined) {
+        rows[at].siblings++;
+        continue;
+      }
+      shown.set(market.eventId, rows.length);
+    }
     const line = await latestLine(db, market.id);
     const quote = await venueQuoteFromDb(db, market.id);
     rows.push({
@@ -73,6 +89,7 @@ export async function getRadar(db: Db, o: { group?: Group; limit: number; now?: 
       kalshiA: quote?.priceA ?? null,
       sharpGap: priceA !== null && line?.line != null ? line.line - priceA : null,
       venueGap: priceA !== null && quote ? quote.priceA - priceA : null,
+      siblings: 0,
     });
   }
   return rows

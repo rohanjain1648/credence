@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Schibsted_Grotesk } from "next/font/google";
+import { Barlow_Condensed, Schibsted_Grotesk } from "next/font/google";
 import { Suspense } from "react";
 import { KeyBanner } from "@/components/KeyBanner";
 import { Nav } from "@/components/Nav";
 import "./globals.css";
 
 const grotesk = Schibsted_Grotesk({ variable: "--font-grotesk", subsets: ["latin"] });
+const numeric = Barlow_Condensed({ variable: "--font-barlow", subsets: ["latin"], weight: ["500", "600"] });
 
 export const metadata: Metadata = {
   title: "Credence",
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${grotesk.variable} antialiased`}>
+    <html lang="en" className={`${grotesk.variable} ${numeric.variable} antialiased`}>
       <body className="min-h-screen">
         <Nav />
         <Suspense>

@@ -8,9 +8,10 @@ async function MemoryCount() {
   await connection();
   const stats = await getHeaderStats(await getReadyDb());
   return (
-    <Link href="/brain" className="text-sm text-ink-2 hover:text-ink">
-      <span className="font-semibold text-ink">{stats.memoriesStored}</span> memories on Walrus
-      {stats.memoriesQueued > 0 && <span className="text-muted">, {stats.memoriesQueued} on the way</span>}
+    <Link href="/brain" className="inline-flex items-center gap-2 rounded-full border border-rule-strong px-3 py-1 text-sm text-ink-2 hover:text-ink">
+      <span className={`h-2 w-2 rounded-full ${stats.memoriesStored > 0 ? "bg-won" : "bg-muted"}`} aria-hidden />
+      <span className="font-semibold tabular-nums text-ink">{stats.memoriesStored}</span> on Walrus
+      {stats.memoriesQueued > 0 && <span className="text-muted">+{stats.memoriesQueued} queued</span>}
     </Link>
   );
 }
@@ -25,7 +26,7 @@ const links = [
 export function Nav() {
   return (
     <header className="border-b border-rule">
-      <div className="mx-auto flex max-w-5xl flex-wrap items-baseline gap-x-8 gap-y-2 px-4 py-4 sm:px-6">
+      <div className="mx-auto flex max-w-5xl flex-wrap items-center gap-x-8 gap-y-2 px-4 py-4 sm:px-6">
         <Link href="/" className="text-xl font-bold tracking-tight">
           Credence
         </Link>

@@ -23,9 +23,9 @@ beforeEach(async () => {
   db = await createTestDb();
   const ctx = createEngineCtx({ db, tatum: null, memory: null, now: () => NOW, log: () => {} });
   await upsertMarkets(ctx, [
-    makeMarket({ id: "big-sharp", question: "Lakers vs. Celtics", outcomes: two(0.4), volume: 10 }),
-    makeMarket({ id: "venue", question: "Will the Senate flip in 2026?", outcomes: two(0.5), volume: 20, ...noSlug("venue") }),
-    makeMarket({ id: "quiet", question: "Bitcoin above 100k on Nov 7?", outcomes: two(0.5), volume: 30, ...noSlug("quiet") }),
+    makeMarket({ id: "big-sharp", eventId: "e1", question: "Lakers vs. Celtics", outcomes: two(0.4), volume: 10 }),
+    makeMarket({ id: "venue", eventId: "e2", question: "Will the Senate flip in 2026?", outcomes: two(0.5), volume: 20, ...noSlug("venue") }),
+    makeMarket({ id: "quiet", eventId: "e3", question: "Bitcoin above 100k on Nov 7?", outcomes: two(0.5), volume: 30, ...noSlug("quiet") }),
     makeMarket({ id: "closed", question: "Closed one", outcomes: two(0.5), closeTime: "2026-10-01T00:00:00Z" }),
     makeMarket({ id: "resolved", question: "Done", outcomes: two(0.5), resolution: { outcome: "Yes", resolvedAt: null, txHash: null, source: null } }),
     makeMarket({ id: "KX", platform: "kalshi", question: "Senate flip?", outcomes: two(0.55) }),
@@ -48,6 +48,31 @@ describe("radar", () => {
     expect(ids).not.toContain("closed");
     expect(ids).not.toContain("resolved");
     expect(ids).not.toContain("KX");
+  });
+
+  test("hides near-certain long shots unless asked", async () => {
+    const ctx = createEngineCtx({ db, tatum: null, memory: null, now: () => NOW, log: () => {} });
+    await upsertMarkets(ctx, [
+      makeMarket({ id: "longshot", eventId: "e4", question: "Long shot", outcomes: two(0.01), volume: 99, ...noSlug("longshot") }),
+      makeMarket({ id: "lock", eventId: "e5", question: "Lock", outcomes: two(0.985), volume: 98, ...noSlug("lock") }),
+    ]);
+    const ids = async (includeLongShots?: boolean) => (await getRadar(db, { limit: 10, now: NOW, includeLongShots })).map((r) => r.market.id);
+    expect(await ids()).not.toContain("longshot");
+    expect(await ids()).not.toContain("lock");
+    expect(await ids(true)).toEqual(expect.arrayContaining(["longshot", "lock"]));
+  });
+
+  test("collapses brackets of one event into its biggest market", async () => {
+    const ctx = createEngineCtx({ db, tatum: null, memory: null, now: () => NOW, log: () => {} });
+    await upsertMarkets(ctx, [
+      makeMarket({ id: "b1", eventId: "tweets", question: "400-419 tweets?", outcomes: two(0.3), volume: 50, ...noSlug("b1") }),
+      makeMarket({ id: "b2", eventId: "tweets", question: "420-439 tweets?", outcomes: two(0.4), volume: 80, ...noSlug("b2") }),
+      makeMarket({ id: "b3", eventId: "tweets", question: "440-459 tweets?", outcomes: two(0.2), volume: 60, ...noSlug("b3") }),
+    ]);
+    const rows = await getRadar(db, { limit: 10, now: NOW });
+    const tweets = rows.filter((r) => r.market.eventId === "tweets");
+    expect(tweets.map((r) => [r.market.id, r.siblings])).toEqual([["b2", 2]]);
+    expect(rows.find((r) => r.market.id === "quiet")?.siblings).toBe(0);
   });
 
   test("filters by group", async () => {
