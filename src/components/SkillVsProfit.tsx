@@ -45,7 +45,7 @@ export function SkillVsProfit({ voices }: { voices: Voice[] }) {
           <g key={t}>
             <line x1={x(t)} x2={x(t)} y1={H - PAD.b} y2={H - PAD.b + 4} stroke="var(--rule-strong)" />
             <text x={x(t)} y={H - PAD.b + 16} textAnchor="middle" fontSize={11} fill="var(--muted)">
-              {t === 0 ? "$0" : signedUsd(t).replace(".0", "")}
+              {t === 0 ? "$0" : signedUsd(t)}
             </text>
           </g>
         ))}

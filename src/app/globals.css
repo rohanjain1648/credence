@@ -56,7 +56,6 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-grotesk), system-ui, sans-serif;
-  font-feature-settings: "tnum" 1, "ss01" 1;
 }
 
 :focus-visible {

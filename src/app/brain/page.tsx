@@ -65,8 +65,7 @@ async function Brain() {
       <section className="mt-14">
         <h2 className="text-xl font-semibold">Get your memory back</h2>
         <p className="mb-4 mt-1 max-w-prose text-sm text-ink-2">
-          This wipes Credence&apos;s local trust model, then rebuilds it from the latest checkpoint on Walrus Mainnet. The numbers below come back without touching the local
-          copy.
+          This wipes Credence&apos;s local trust model, then rebuilds it from the latest checkpoint on Walrus Mainnet. Watch the numbers below: they come back from Walrus alone.
         </p>
         <AmnesiaButton enabled={getEnv().AMNESIA_ENABLED} />
       </section>

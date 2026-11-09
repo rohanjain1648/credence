@@ -79,8 +79,8 @@ async function MarketBody({ params }: { params: PageProps<"/market/[id]">["param
         </div>
       </section>
 
-      <div className="mt-12 grid gap-12 lg:grid-cols-[1fr_20rem]">
-        <div className="space-y-12">
+      <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_20rem]">
+        <div className="min-w-0 space-y-12">
           <section>
             <h2 className="mb-4 text-xl font-semibold">Who is behind the Sharp Line</h2>
             <SharpBreakdown view={view} />

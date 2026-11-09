@@ -2,7 +2,7 @@ import type { CalibrationBin } from "@/engine/picks";
 import { pct } from "@/lib/format";
 
 const SIZE = 260;
-const PAD = { l: 40, r: 12, t: 12, b: 36 };
+const PAD = { l: 40, r: 22, t: 12, b: 36 };
 
 /** Your stated confidence against how often you were right. Dots below the diagonal mean overconfidence. */
 export function Calibration({ bins }: { bins: CalibrationBin[] }) {

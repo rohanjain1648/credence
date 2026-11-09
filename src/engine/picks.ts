@@ -151,7 +151,7 @@ export function pickWarnings(report: BiasReport, group: Group, priceOfPick: numb
   const warnings: string[] = [];
   const inGroup = report.byGroup[group];
   if (inGroup && inGroup.n >= MIN_PICKS_FOR_WARNINGS && inGroup.edge < 0) {
-    warnings.push(`You've averaged ${Math.round(inGroup.edge * 100)} pts against the market on ${group} over ${inGroup.n} picks.`);
+    warnings.push(`Your edge on ${group} averages ${Math.round(inGroup.edge * 100)} pts over ${inGroup.n} picks.`);
   }
   if (report.overconfidence >= OVERCONFIDENCE_WARNING) {
     warnings.push(`You've been overconfident: your confidence runs ${Math.round(report.overconfidence * 100)} pts above your hit rate.`);

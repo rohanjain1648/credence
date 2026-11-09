@@ -19,13 +19,15 @@ export function closesIn(closeTime: number | null, now: number): string {
   return `closes in ${Math.round(h / 24)} days`;
 }
 
+const compact = (v: number) => v.toFixed(1).replace(/\.0$/, "");
+
 export const usd = (v: number | null | undefined) =>
-  v == null ? "–" : v >= 1e6 ? `$${(v / 1e6).toFixed(1)}M` : v >= 1e3 ? `$${(v / 1e3).toFixed(1)}k` : `$${Math.round(v)}`;
+  v == null ? "–" : v >= 1e6 ? `$${compact(v / 1e6)}M` : v >= 1e3 ? `$${compact(v / 1e3)}k` : `$${Math.round(v)}`;
 
 export const walrusBlobUrl = (blobId: string) => `https://walruscan.com/mainnet/blob/${blobId}`;
 export const suiObjectUrl = (id: string) => `https://suiscan.xyz/mainnet/object/${id}`;
 
-export const signedUsd =(v: number | null | undefined) => (v == null ? "–" : `${v < 0 ? "−" : ""}${usd(Math.abs(v))}`);
+export const signedUsd = (v: number | null | undefined) => (v == null ? "–" : `${v < 0 ? "−" : ""}${usd(Math.abs(v))}`);
 
 export const shortDate = (ts: number) => new Date(ts).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
 

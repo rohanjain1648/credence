@@ -110,7 +110,7 @@ async function Journal({ searchParams }: { searchParams: PageProps<"/me">["searc
                       {p.question}
                     </Link>
                     <p className="mt-1 text-sm text-ink-2">
-                      You picked {p.outcomeName} at {pct(p.confidence)}, when the market said {pct(p.priceAtPick)}. {closesIn(p.closeTime, now)}.
+                      You picked {p.outcomeName} at {pct(p.confidence)}, when the market said {pct(p.priceAtPick)}. It {closesIn(p.closeTime, now)}.
                     </p>
                     {p.reason && <p className="mt-1 text-sm text-ink-2">Why: {p.reason}</p>}
                     <p className="mt-1 text-sm text-muted">
@@ -147,7 +147,7 @@ async function Journal({ searchParams }: { searchParams: PageProps<"/me">["searc
           </section>
 
           {view.settled.length > 0 && (
-            <section className="mt-12 grid gap-12 lg:grid-cols-[1fr_20rem]">
+            <section className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_20rem]">
               <div>
                 <h2 className="mb-4 text-xl font-semibold">How you forecast</h2>
                 <BiasCard bias={view.bias} />

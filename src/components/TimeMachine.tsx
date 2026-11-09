@@ -45,11 +45,11 @@ export function TimeMachine({ checkpoints, initial }: { checkpoints: Array<{ seq
       {failed && <p className="mt-2 text-sm text-lost">That checkpoint couldn&apos;t be loaded. Move the slider to try again.</p>}
 
       <p className="mt-4 max-w-prose text-sm text-ink-2">
-        At checkpoint #{view.seq}, Credence had learned from {view.stats.resolved} resolved {view.stats.resolved === 1 ? "market" : "markets"} and trusted {view.voiceCount}{" "}
+        At checkpoint #{view.seq}, Credence had learned from {view.stats.resolved} resolved {view.stats.resolved === 1 ? "market" : "markets"} and remembered {view.voiceCount}{" "}
         {view.voiceCount === 1 ? "voice" : "voices"}.
       </p>
 
-      <div className="mt-6 grid gap-10 lg:grid-cols-[14rem_1fr]">
+      <div className="mt-6 grid grid-cols-1 gap-10 lg:grid-cols-[14rem_minmax(0,1fr)]">
         <div>
           <h3 className="mb-2 font-semibold">Trust in sharp money</h3>
           {lambdas.length === 0 ? (
