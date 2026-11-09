@@ -8,44 +8,36 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Summarize the v2 OpenAPI spec
+      - name: Parameter details and sample settled positions
         run: |
           curl -sSL --max-time 30 https://data-api.polymarket.com/v2/openapi.json -o spec.json
           python3 - <<'PY'
           import json
           s = json.load(open("spec.json"))
-          comps = s.get("components", {}).get("schemas", {})
+          comps = s.get("components", {})
           def ref(o):
               while isinstance(o, dict) and "$ref" in o:
-                  o = comps.get(o["$ref"].split("/")[-1], {})
+                  parts = o["$ref"].split("/")
+                  o = comps.get(parts[-2], {}).get(parts[-1], {})
               return o
-          def fields(schema, depth=0):
-              schema = ref(schema)
-              if schema.get("type") == "array" or "items" in schema:
-                  return fields(schema.get("items", {}), depth)
-              props = schema.get("properties", {})
-              out = []
-              for k, v in props.items():
-                  v2 = ref(v)
-                  t = v2.get("type", "obj")
-                  if k == "data" and depth == 0:
-                      out.append("data[]: " + ", ".join(fields(v2, 1)))
-                  elif t in ("array", "object") and depth < 2 and (v2.get("properties") or v2.get("items")):
-                      out.append(f"{k}{{" + ", ".join(fields(v2, depth + 1)) + "}")
-                  else:
-                      out.append(f"{k}:{t}")
-              return out
-          for path, ops in s.get("paths", {}).items():
-              for m, op in ops.items():
-                  if m != "get": continue
-                  params = []
-                  for p in op.get("parameters", []):
-                      p = ref(p); sc = ref(p.get("schema", {}))
-                      extra = ("=" + "|".join(map(str, sc["enum"]))) if "enum" in sc else ""
-                      params.append(f"{p.get('name')}{'*' if p.get('required') else ''}{extra}")
-                  print(f"\n## GET {path}  -- {op.get('summary','')}")
-                  print("params:", ", ".join(params))
-                  r = op.get("responses", {}).get("200", {}).get("content", {}).get("application/json", {}).get("schema", {})
-                  if path.rstrip("/").split("/")[-1] in ("holders", "positions", "leaderboard", "closed-positions", "closed_positions", "activity") or "closed" in path:
-                      print("fields:", "; ".join(fields(r)))
+          for path in ["/v2/holders", "/v2/positions", "/v2/leaderboard"]:
+              op = s["paths"][path]["get"]
+              print("##", path)
+              for p in op.get("parameters", []):
+                  p = ref(p); sc = ref(p.get("schema", {}))
+                  any_of = [ref(x) for x in sc.get("anyOf", sc.get("oneOf", []))]
+                  enum = sc.get("enum") or next((x.get("enum") for x in any_of if x.get("enum")), None)
+                  print(f"  {p['name']}: type={sc.get('type') or [x.get('type') for x in any_of]} enum={enum} default={sc.get('default')} max={sc.get('maximum')} | {(p.get('description') or '')[:140]}")
+          lb = s["paths"]["/v2/leaderboard"]["get"]["responses"]["200"]["content"]["application/json"]["schema"]
+          print("leaderboard schema:", json.dumps(ref(lb))[:600])
           PY
+          W=0xf0318c32136c2db7fec88b84869aee6a1106c80c
+          for st in closed resolved settled redeemable all; do
+            echo "=== status=$st"
+            curl -sS --max-time 20 "https://data-api.polymarket.com/v2/positions?user=$W&status=$st&limit=3" | python3 -c "
+          import json,sys
+          d=json.load(sys.stdin)
+          if 'data' not in d: print(d); sys.exit()
+          for r in d['data']: print({k:r.get(k) for k in ['status','avg_price','current_price','realized_pnl','total_cost_usdc','total_size','current_size','last_event_at','end_date','redeemable','outcome_index','title','event_slug','slug']})
+          print('pagination', d.get('pagination'))"
+          done
